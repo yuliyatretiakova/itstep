@@ -1,0 +1,22 @@
+pre{
+    color: grey;
+    font-size: 30px;
+    word-spacing: 6px;
+    letter-spacing: 4px;
+    line-height: 60px;
+}
+
+ins+span{
+    text-decoration: overline;
+}
+
+.simpl{
+    font-weight: 900;
+}
+
+ins del{
+    text-shadow: 5px 4px 2px orange;
+}
+ins .simpl del{
+    font-size: 35px;
+}
