@@ -20,3 +20,16 @@ ins del{
 ins .simpl del{
     font-size: 35px;
 }
+
+.power{
+    color: rgba(245, 24, 164, 0.3);
+}
+
+.transparent{
+    opacity: 0;
+}
+
+.transparent:hover{
+    opacity: 1;
+}
+
