@@ -1,0 +1,37 @@
+table{
+    border-spacing: 0ch;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    }
+
+th{
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+td{
+    border: 1px solid #000;
+}
+
+table td{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.clgrey{
+    color: rgb(106, 103, 103);
+}
+
+.weekend{
+    color: rgb(255, 0, 0);
+}
+
+img{
+   width: 100%;
+   opacity: 0.7;
+}

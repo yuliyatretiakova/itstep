@@ -1,0 +1,46 @@
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 5px solid #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    }
+th{
+    height: 30px;
+    border: 1px solid #fff;
+    border-bottom: 5px;
+    color: #fff;
+    background-color: rgb(30, 30, 177);
+}
+
+table td{
+    height: 30px;
+    border: 1px solid #fff;
+}
+
+
+tr:nth-child(2n+1){
+    background-color: rgb(140, 154, 247);
+}
+
+tr:nth-child(2n){
+    background-color: rgb(170, 212, 253);
+}
+
+td:nth-child(1){
+    width: 60px;
+    text-align: center;
+}
+
+td:nth-child(2){
+    width: 200px;
+    text-align: left;
+}
+
+td:nth-child(n+3){
+    width: 150px;
+    text-align: center;
+}
+th:nth-child(2){
+    text-align: left;
+}
