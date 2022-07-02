@@ -5,10 +5,14 @@ table{
     }
 
 td{
-    border: 1px solid #000;
+    border: 0px;
 }
 
 table td{
     width: 160px;
     height: 120px;
+}
+
+tr:nth-child(2) td:nth-child(2){
+    border: 1px solid #000;
 }
