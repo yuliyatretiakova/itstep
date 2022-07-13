@@ -1,0 +1,106 @@
+div{
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    color: #000;
+    font-size: 30px;
+   
+}
+
+.main{
+    width: 800px;
+    height: 1000px;
+    position: absolute;
+    left: calc(50% - 400px);
+    border: 1px solid #000;
+}
+.header{
+    width: 800px;
+    height: 200px;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(32, 32, 210);
+    
+}
+.allinfo{
+    width: 600px;
+    height: 200px;
+    background-color: rgb(249, 208, 23);
+}
+.info{
+    width: 200px;
+    height: 100px;
+}
+.address{
+    width: 200px;
+    height: 200px;
+}
+.delivery{
+    width: 200px;
+    height: 200px;
+} 
+.privat-office{
+    width: 200px;
+    height: 200px;
+}
+.catalog{
+    width: 200px;
+    height: 600px;
+    background-color: rgb(240, 158, 158);
+}
+.products{
+    width: 200px;
+    height: 200px;
+}
+.stock{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(250, 19, 215);
+}
+.maxdiscount{
+    width: 400px;
+    height: 400px;
+}
+.discount{
+    width: 200px;
+    height: 200px;
+}
+.basket{
+    width: 600px;
+    height: 200px;
+    background-color: blueviolet;
+}
+.mybasket{
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    width: 800px;
+    height: 200px;
+}
+.footer-logo{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(32, 32, 210);
+}
+.contactinfo{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(238, 5, 5);
+}
+.contacts{
+    width: 400px;
+    height: 100px;
+}
+.agreement{
+    width: 200px;
+    height: 100px;
+}
+.partners{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(99, 228, 13);
+}
