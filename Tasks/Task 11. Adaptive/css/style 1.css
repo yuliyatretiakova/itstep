@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.box{
+    width: calc(100% - 10px);
+    height: 150px;
+    margin: 5px;
+    position: relative;
+    float: left;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    line-height: 150px;
+    background: rgb(91, 140, 239);
+}
+@media(min-width:768px){
+    .box{
+        width: calc(33.3333333% - 10px);
+    }
+}
+@media(min-width:1024px){
+    .box{
+        width: calc(25% - 10px);
+    }
+}
+@media(min-width:1280px){
+    .box{
+        width: calc(16.6666666% - 10px);
+    }
+}
