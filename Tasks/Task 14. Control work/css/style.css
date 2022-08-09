@@ -1,22 +1,25 @@
-.container{
+.portfolio{
+    background: #000;
     width: 440px;
     position: relative;
     margin: 0 auto;
 }
-.portfolio{
-    background: #000;
+.container{
+    width: 100%;
 }
 .portfolio-title{
     display: flex;
     flex-direction: column;
+    padding: 20px 10px;
 }
 .portfolio-title h4{
     color: #fff;
     text-align: center;
     font-family: Roboto, sans-serif;
     font-weight: 400;
+    font-size: 20px;
     letter-spacing: 2px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 .portfolio-title h2{
     color: #fff;
@@ -29,6 +32,9 @@
 .images{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 .image{
     width: 100%;
@@ -69,13 +75,16 @@
     background-position: 50% 50%;
 }
 .team{
-    display: flex;
-    flex-wrap: wrap;
-}
-.container-team{
-    width: 340px;
+    width: 440px;
     position: relative;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 70px;
+}
+.container-team{
+    width: 90%;
 }
 .img{
     width: 100%;
@@ -90,6 +99,7 @@
 .team-text{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .team-text h4{
     color: #000;
@@ -112,7 +122,7 @@ p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: #000;
-    margin: 30px 6px 30px 6px;
+    margin: 30px 6px;
     position: relative;
     text-align: center;
 }
@@ -123,4 +133,69 @@ p{
     letter-spacing: 1px;
     padding: 5px 10px;
     text-decoration: none;    
+}
+.footer{
+    background-color: #000;
+    padding: 30px 30px;
+    width: 440px;
+    position: relative;
+    margin: 0 auto;
+}
+.container-footer{
+    width: 100%;
+    position: relative;
+    margin: 30px auto;
+}
+.address{
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+}
+.phones{
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+}
+.address h5{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.address h4{
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 30px 0px 0px;
+}
+.phones h2{
+    color: #fff;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0px 0px;
+}
+.phones p{
+    color: #fff;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin: 20px 0px 0px;
+}
+@media (min-width:600px){
+.portfolio, .image, .team, .footer{
+    width: 600px;   
+}
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8{
+    width: 800px;
+}
+}
+@media(min-width:768px){
+
+}
+@media(min-width:1024px){
+
+}
+@media(min-width:1200px){
+
 }
