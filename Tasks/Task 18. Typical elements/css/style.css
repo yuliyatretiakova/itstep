@@ -1,12 +1,6 @@
 .header{
     background: #f2ebe3;
 }
-.container{
-
-}
-.row{
-
-}
 .main-menu{
     display: flex;
     flex-direction: column;
@@ -38,10 +32,10 @@
     font-size: 14px;
 }
 .main-menu > ul > li > ul{
-    display: none;
-    position: absolute;
+    display: block;
+    position: fixed;
+    margin: -70px 0 0 250px;
     list-style: none;
-    left: 255px;
     padding: 10px;
     background-color: #f3ece5;
     box-shadow: 0 5px 6.8px 0.2px rgb(0 0 0 / 16%);
@@ -51,12 +45,6 @@
     color: #673f35;
     text-transform: uppercase;
     font-weight: 600;
-}
-.stock{
-    top: 105px;
-}
-.info{
-    top: 250px;
 }
 .main-menu > ul > li:hover > ul{
     display: block;
