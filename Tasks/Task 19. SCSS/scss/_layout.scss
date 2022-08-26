@@ -1,0 +1,14 @@
+header {
+    background: $backgroundm;
+}
+.container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+}

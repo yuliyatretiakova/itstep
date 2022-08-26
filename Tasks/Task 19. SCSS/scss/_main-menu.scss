@@ -1,0 +1,70 @@
+.main-menu{
+    padding-inline-start: 0px;
+
+        > ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding-inline-start: 20px;
+        
+                > li{
+                    &:hover{
+                        > ul{
+                            display: block;
+                        }
+                    }
+
+                    > a{
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                        color: $brown;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        padding: 7px 20px;
+                        font-size: 20px;
+                        border-right: 3px solid transparent;
+
+                        > span{
+                            color: $orange;
+                            font-size: 14px;
+                        }
+                    }
+
+                    &.has_submenu{
+
+                        &:hover{
+                           > a{
+                            border-right: 3px solid $red;
+                            }
+                        }
+                    }
+
+                   > ul{
+                        display: none;
+                        position: fixed;
+                        margin: -70px 0 0 250px;
+                        list-style: none;
+                        padding: 20px;
+                        background-color: #f3ece5;
+                        z-index: 10000;
+                        box-shadow: 0 5px 6.8px 0.2px $shadow;
+                        width: 250px;
+
+                       > li{
+                            +li{
+                                margin-top: 10px;
+                            }
+
+                           > a{
+                                text-decoration: none;
+                                color: $brown;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+        }
+
+}
