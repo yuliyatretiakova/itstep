@@ -1,6 +1,7 @@
 .header{
     background-color: $white;
     @include flex-center-height;
+    justify-content: space-between;
 
     > div{
         @include flex-center-height;
@@ -68,6 +69,7 @@
                 display: inline-block;
                 background-image: url(../images/eye.png);
                 margin-right: 10px;
+                background-repeat: no-repeat;
             }
         }
     }

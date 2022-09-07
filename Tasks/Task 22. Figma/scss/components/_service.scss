@@ -1,0 +1,164 @@
+.service {
+    width: 1920px;
+    height: 700px;
+    background-color: $lgreen;
+    position: relative;
+    margin: 0 auto;
+}
+.service__list {
+    @include flex-center-height;
+    justify-content: space-around;
+
+    &__cosmetology {
+       
+        a{
+            @include size-height-decoration;
+            color: $white;
+        }
+        
+    }
+
+    &__pl-surgery {
+
+        a {
+            @include size-height-decoration;
+            color: $white;
+        }
+    }
+
+    &__dentistry {
+
+        a {
+            @include size-height-decoration;
+            color: $white;
+        }
+    }
+
+    &__laser {
+
+        a {
+            @include size-height-decoration;
+            color: $white;
+        }
+    }
+
+    &__contacts {
+
+        a {
+            @include size-height-decoration;
+            color: $white;
+        }
+    }
+
+    &__reception {
+
+        a {
+            @include size-height-decoration;
+            color: $black;
+            padding: 9px 15px 10px;
+            border: 1px solid $gray;
+            background-color: $white;
+        }
+    }
+}
+
+.service__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__info {
+        
+        h2 {
+            font-size: 48px;
+            line-height: 72px;
+            font-weight: bold;
+            color: $white;
+        }
+
+        p {
+            width: 416px;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: normal;
+            color: $white;
+            margin: 20px 0;
+        }
+
+        .more {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            a {
+                font-size: 18px;
+                line-height: 22px;
+                color: $white;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 15px 25px;
+                background-color: $dgreen;
+                border: 1px solid $dgreen;
+            } 
+        }
+    }
+    .button {
+        display: flex;
+        margin-left: 367px;
+
+        &__arrow {
+            width: 120px;
+            height: 50px;
+            border: 1px solid $white;
+            display: flex;
+
+            &_left {
+                background-image: url(../images/arrow-left.png);
+                width: 60px;
+                height: 50px;
+                
+            }
+
+            &_right {
+                background-image: url(../images/arrow-right.png);
+                width: 60px;
+                height: 50px;
+            }
+        }
+    }
+}
+.service__other {
+    display: flex;
+    height: 69px;
+    align-items: center;
+    
+    &_complex {
+        width: 50%;
+        
+        a {
+            @include for__other;
+            padding: 27px 199px;
+            background-color: $dgreen;
+        }
+    }
+
+    &_education {
+        width: 25%;
+
+        a {
+            @include for__other;
+            padding: 27px 82px;
+            background-color: $lgreen;
+        }
+    }
+
+    &_vip {
+        width: 25%;
+
+        a {
+            @include for__other;
+            padding: 27px 97px;
+            background-color: $dgreen;
+        }
+    }
+
+}

@@ -25,6 +25,7 @@ html, body {
   display: flex;
   height: 90px;
   align-items: center;
+  justify-content: space-between;
 }
 .header > div {
   display: flex;
@@ -85,6 +86,7 @@ html, body {
   display: inline-block;
   background-image: url(../images/eye.png);
   margin-right: 10px;
+  background-repeat: no-repeat;
 }
 .header__social ul {
   list-style: none;
@@ -117,4 +119,271 @@ html, body {
 }
 .header__social ul li a.ig {
   background-image: url(../images/ig.png);
+}
+
+.service {
+  width: 1920px;
+  height: 700px;
+  background-color: #4FBFA5;
+  position: relative;
+  margin: 0 auto;
+}
+
+.service__list {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-around;
+}
+.service__list__cosmetology a {
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+.service__list__pl-surgery a {
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+.service__list__dentistry a {
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+.service__list__laser a {
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+.service__list__contacts a {
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+.service__list__reception a {
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #000;
+  padding: 9px 15px 10px;
+  border: 1px solid #C4C4C4;
+  background-color: #fff;
+}
+
+.service__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service__slider__info h2 {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: bold;
+  color: #fff;
+}
+.service__slider__info p {
+  width: 416px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #fff;
+  margin: 20px 0;
+}
+.service__slider__info .more {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.service__slider__info .more a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  background-color: #00868A;
+  border: 1px solid #00868A;
+}
+.service__slider .button {
+  display: flex;
+  margin-left: 367px;
+}
+.service__slider .button__arrow {
+  width: 120px;
+  height: 50px;
+  border: 1px solid #fff;
+  display: flex;
+}
+.service__slider .button__arrow_left {
+  background-image: url(../images/arrow-left.png);
+  width: 60px;
+  height: 50px;
+}
+.service__slider .button__arrow_right {
+  background-image: url(../images/arrow-right.png);
+  width: 60px;
+  height: 50px;
+}
+
+.service__other {
+  display: flex;
+  height: 69px;
+  align-items: center;
+}
+.service__other_complex {
+  width: 50%;
+}
+.service__other_complex a {
+  font-size: 21px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #fff;
+  padding: 27px 199px;
+  background-color: #00868A;
+}
+.service__other_education {
+  width: 25%;
+}
+.service__other_education a {
+  font-size: 21px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #fff;
+  padding: 27px 82px;
+  background-color: #4FBFA5;
+}
+.service__other_vip {
+  width: 25%;
+}
+.service__other_vip a {
+  font-size: 21px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #fff;
+  padding: 27px 97px;
+  background-color: #00868A;
+}
+
+.achievements-all {
+  background-color: #fff;
+  padding-top: 80px;
+  display: flex;
+}
+
+.achievements {
+  display: flex;
+  align-items: baseline;
+}
+
+.achievements__innovation {
+  width: 526px;
+  height: 580px;
+  background-color: #00868A;
+  padding-top: 35px;
+}
+.achievements__innovation__button {
+  width: 125px;
+  background-color: #4FBFA5;
+  margin: 0 361px 30px 40px;
+  padding: 9px 15px;
+  display: flex;
+  justify-content: center;
+}
+.achievements__innovation__button a {
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #fff;
+}
+.achievements__innovation__text {
+  width: 485px;
+  height: 135px;
+  font-size: 30px;
+  line-height: 150%;
+  color: #fff;
+  margin-left: 40px;
+}
+.achievements__innovation__more {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 316px 25px 40px;
+}
+.achievements__innovation__more_arrow-right {
+  background-image: url(../images/Frame-right.png);
+  width: 50px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+}
+.achievements__innovation__more_more-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0 8px 10px;
+  text-transform: uppercase;
+}
+.achievements__innovation__picture {
+  margin-top: 64px;
+}
+
+.achievements__beauty-aesthetics {
+  width: 636px;
+  height: 485px;
+  background-color: #fff;
+  margin-left: 134px;
+  display: flex;
+}
+.achievements__beauty-aesthetics__centers_button {
+  background-color: #4FBFA5;
+  padding: 9px 15px 10px 15px;
+  text-align: center;
+}
+.achievements__beauty-aesthetics__centers_button a {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none;
+}
+.achievements__beauty-aesthetics__centers_list {
+  width: 215px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.achievements__beauty-aesthetics__centers_list .number {
+  width: 50px;
+  font-size: 48px;
+  line-height: 72px;
+  color: rgba(0, 0, 0, 0.25);
+}
+.achievements__beauty-aesthetics__centers_list .meaning {
+  width: 144px;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.25);
+  margin: 10px;
+}
+.achievements__beauty-aesthetics__centers_list .number-green {
+  width: 50px;
+  font-size: 96px;
+  line-height: 150%;
+  color: #00868A;
+  margin: 20px 30px 20px 0;
+}
+.achievements__beauty-aesthetics__centers_list .meaning-green {
+  width: 319px;
+  font-size: 28px;
+  line-height: 150%;
+  color: #000;
+}
+.achievements__beauty-aesthetics__patent {
+  width: 306px;
+  height: 400px;
+  background-image: url(../images/patent.png);
+  margin-left: 115px;
 }/*# sourceMappingURL=style.css.map */

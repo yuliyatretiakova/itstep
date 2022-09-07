@@ -3,3 +3,16 @@
     height: 90px;
     align-items: center;
 }
+
+@mixin size-height-decoration {
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+@mixin for__other {
+    font-size: 21px;
+    line-height: 32px;
+    text-decoration: none;
+    color: $white;
+}

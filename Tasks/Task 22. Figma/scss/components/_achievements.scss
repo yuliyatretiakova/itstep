@@ -1,0 +1,135 @@
+.achievements-all {
+    background-color: $white;
+    padding-top: 80px;
+    display: flex;
+}
+.achievements {
+    display: flex;
+    align-items: baseline;
+}
+.achievements__innovation {
+    width: 526px;
+    height: 580px;
+    background-color: $dgreen;
+    padding-top: 35px;
+
+    &__button {
+        width: 125px;
+        background-color: $lgreen;
+        margin: 0 361px 30px 40px;
+        padding: 9px 15px;
+        display: flex;
+        justify-content: center;
+        
+        a {
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration: none;
+            color: $white;  
+        }   
+    }
+
+    &__text {
+        width: 485px;
+        height: 135px;
+        font-size: 30px;
+        line-height: 150%;
+        color: $white;
+        margin-left: 40px;
+    }
+
+    &__more {
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 316px 25px 40px;
+
+        &_arrow-right {
+            background-image: url(../images/Frame-right.png);
+            width: 50px;
+            height: 40px;
+            border: 1px solid $white;
+            background-repeat: no-repeat;
+        }
+
+        &_more-text {
+            font-size: 16px;
+            line-height: 24px;
+            text-decoration: none;
+            color: $white;
+            padding: 8px 0 8px 10px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__picture {
+        margin-top: 64px;
+    }
+}
+
+.achievements__beauty-aesthetics {
+    width: 636px;
+    height: 485px;
+    background-color: $white;
+    margin-left: 134px;
+    display: flex;
+
+    &__centers {
+
+        &_button {
+            background-color: $lgreen;
+            padding: 9px 15px 10px 15px;
+            text-align: center;
+
+            a {
+                font-size: 18px;
+                line-height: 21px;
+                color: $white;
+                text-decoration: none;  
+            }
+        }
+
+        &_list {
+            width: 215px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .number {
+                width: 50px;
+                font-size: 48px;
+                line-height: 72px;
+                color: $black-transparent;
+                
+            }
+
+            .meaning {
+                width: 144px;
+                font-size: 14px;
+                line-height: 21px;
+                color: $black-transparent;
+                margin: 10px;
+            }
+
+            .number-green {
+                width: 50px;
+                font-size: 96px;
+                line-height: 150%;
+                color: $dgreen;
+                margin: 20px 30px 20px 0;
+            }
+            
+            .meaning-green {
+                width: 319px;
+                font-size: 28px;
+                line-height: 150%;
+                color: $black;
+            }
+        }
+    }
+    &__patent {
+        width: 306px;
+        height: 400px;
+        background-image: url(../images/patent.png);
+        margin-left: 115px;
+    }
+}
