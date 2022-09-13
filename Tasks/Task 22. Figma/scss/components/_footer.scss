@@ -1,0 +1,194 @@
+footer {
+    background-color: $white;
+    padding-top: 100px;
+}
+
+.footer__info {
+    width: 100%;
+    display: flex;
+    padding-bottom: 80px;
+
+    &__services {
+        width: 77%;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__card {
+            width: 33.3333333%;
+
+            &_header {
+                font-size: 21px;
+                line-height: 150%;
+                font-weight: bold;
+                color: $black;
+            }
+
+            &_list {
+                
+                ul {
+                    list-style-type: none;
+                    padding: 0px;
+
+                    li {
+                        margin-bottom: 15px;
+                        a {
+                            font-size: 14px;
+                            line-height: 150%;
+                            text-decoration: none;
+                            color: $black;
+                        }
+                    }   
+                }   
+            }
+        }
+    }
+    &__contacts {
+        width: 23%;
+
+        &_head {
+            font-size: 11px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: $black;
+            opacity: 0.5;
+            margin-bottom: 10px;
+        }
+
+        &_phone {
+            margin-bottom: 30px;
+            > a {
+                font-size: 21px;
+                line-height: 150%;
+                font-weight: bold;
+                color: $black;
+                text-decoration: none;
+            }
+        }
+
+        &__address {
+            
+            address {
+                font-size: 21px;
+                line-height: 150%;
+                font-weight: bold;
+                font-style: normal;
+                color: $black;
+                margin-bottom: 15px;
+            }
+            
+            &_button {
+                width: 164px;
+                background-color: $dgreen;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                a {
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: normal;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: $white;
+                    text-decoration: none;
+                    padding: 15px 25px;
+                }
+            }
+        }
+    }
+}
+.footer__last-row {
+    @include flex-center-height;
+    justify-content: space-between;
+    border: 1px solid $gray;
+
+    >div {
+        @include flex-center-height;
+    }
+
+    &__copyright {
+        width: 300px;
+        font-size: 12px;
+        line-height: 150%;
+        color: $black;
+        padding: 20px 25px 16px;
+    }
+
+    &__private {
+        width: 178px;
+        border-right: 1px solid $gray;
+        padding: 0 71px 0 45px;
+        a {
+            font-size: 12px;
+            line-height: 150%;
+            color: $black;
+        }    
+    }
+
+    &__special {
+        padding: 0 30px;
+        
+        a {
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: $dgreen;
+            color: $white;
+            padding: 10px 15px 8px;
+            display: flex;
+            align-items: center;
+        
+            .eye {
+                width: 26px;
+                height: 22px;
+                display: inline-block;
+                background-image: url(../images/eye.png);
+                margin-right: 10px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &__social{
+        ul{
+            list-style: none;
+            display: flex;
+            border-left: 1px solid $gray;
+            margin: 0;
+            padding: 0;
+
+            li{
+                border-right: 1px solid $gray;
+                padding: 0 24px;
+                display: flex;
+                height: 90px;
+                align-items: center;
+
+                &:last-child {
+                    border: none;
+                }
+
+                a{
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-position: center center;
+
+                    &.vk{
+                        background-image: url(../images/vk.png)
+                    }
+                    &.yt{
+                        background-image: url(../images/yt.png)
+                    }
+                    &.fb{
+                        background-image: url(../images/fb.png)
+                    }
+                    &.ig{
+                        background-image: url(../images/ig.png)
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,23 +5,21 @@
 }
 .achievements {
     display: flex;
-    align-items: baseline;
 }
 .achievements__innovation {
     width: 526px;
-    height: 580px;
     background-color: $dgreen;
     padding-top: 35px;
 
     &__button {
         width: 125px;
         background-color: $lgreen;
-        margin: 0 361px 30px 40px;
+        margin: 0 30px 30px 40px;
         padding: 9px 15px;
         display: flex;
         justify-content: center;
         
-        a {
+        > a {
             font-size: 18px;
             line-height: 21px;
             text-decoration: none;
@@ -31,7 +29,6 @@
 
     &__text {
         width: 485px;
-        height: 135px;
         font-size: 30px;
         line-height: 150%;
         color: $white;
@@ -42,7 +39,7 @@
         width: 170px;
         display: flex;
         justify-content: space-between;
-        margin: 40px 316px 25px 40px;
+        margin: 25px 316px 45px 40px;
 
         &_arrow-right {
             background-image: url(../images/Frame-right.png);
@@ -63,25 +60,28 @@
     }
 
     &__picture {
-        margin-top: 64px;
+        margin-top: 45px;
     }
 }
 
 .achievements__beauty-aesthetics {
     width: 636px;
-    height: 485px;
     background-color: $white;
+    background-image: url(../images/patent.png);
+    background-position: 300px 50px;
+    background-repeat: no-repeat;
     margin-left: 134px;
-    display: flex;
+    padding-top: 30px;
 
     &__centers {
 
         &_button {
+            width: 156px;
             background-color: $lgreen;
             padding: 9px 15px 10px 15px;
             text-align: center;
 
-            a {
+            > a {
                 font-size: 18px;
                 line-height: 21px;
                 color: $white;
@@ -90,46 +90,51 @@
         }
 
         &_list {
-            width: 215px;
-            display: flex;
-            flex-wrap: wrap;
+            margin: 30px 0;
 
-            .number {
-                width: 50px;
-                font-size: 48px;
-                line-height: 72px;
-                color: $black-transparent;
+            &-grey {
+                width: 250px;
+                display: flex;
+                flex-wrap: wrap;
+            
+
+                .number {
+                    width: 50px;
+                    font-size: 48px;
+                    line-height: 72px;
+                    color: $black-transparent;
+                }
+
+                .meaning {
+                    width: 144px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $black-transparent;
+                    margin: 13px;
+                }
+            }
+
+            &-green {
+                width: 500px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .number-green {
+                    width: 100px;
+                    font-size: 96px;
+                    line-height: 150%;
+                    color: $dgreen;
+                }
                 
-            }
-
-            .meaning {
-                width: 144px;
-                font-size: 14px;
-                line-height: 21px;
-                color: $black-transparent;
-                margin: 10px;
-            }
-
-            .number-green {
-                width: 50px;
-                font-size: 96px;
-                line-height: 150%;
-                color: $dgreen;
-                margin: 20px 30px 20px 0;
+                .meaning-green {
+                    width: 319px;
+                    font-size: 28px;
+                    line-height: 150%;
+                    color: $black;
+                    margin: 30px;
+                }
             }
             
-            .meaning-green {
-                width: 319px;
-                font-size: 28px;
-                line-height: 150%;
-                color: $black;
-            }
         }
-    }
-    &__patent {
-        width: 306px;
-        height: 400px;
-        background-image: url(../images/patent.png);
-        margin-left: 115px;
     }
 }

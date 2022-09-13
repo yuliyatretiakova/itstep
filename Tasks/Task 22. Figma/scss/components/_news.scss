@@ -1,0 +1,98 @@
+.news-all {
+    padding: 40px 0;
+}
+
+.news {
+    display: flex;
+}
+
+.news__list {
+    width: 526px;
+    background-color: $lgreen;
+
+    &_list-button {
+        width: 101px;
+        background-color: $dgreen;
+        padding: 10px 15px;
+        margin: 35px 385px 30px 40px;
+        display: flex;
+        justify-content: center;
+
+        > a {
+            font-size: 18px;
+            line-height: 21px;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    &_news-1 {
+        background-color: $dgreen;
+        padding: 35px 40px;
+
+        > .news-1 {
+            @include news;
+        }
+    }
+
+    &_news-2 {
+        padding: 35px 40px;
+    
+        > .news-2 {
+            @include news;
+        }
+    }
+
+    &_news-3 {
+        padding: 35px 40px;
+    
+        >.news-3 {
+            @include news;
+        }
+    }
+}
+
+.news__article {
+    width: 770px;
+    background-color: $bgnews;
+
+    &_header {
+        width: 650px;
+        margin: 35px 60px 25px;
+        color: $black;
+
+        > h3 {
+            font-size: 24px;
+            line-height: 150%;
+            font-weight: bold;
+        }
+    }
+
+    &_text {
+        margin: 25px 60px 57px 60px;
+
+        > ul {
+            list-style: none;
+            padding-inline-start: 20px;
+
+            > li {
+                font-size: 14px;
+                line-height: 150%;
+                margin-top: 21px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-image: url(../images/dot.png);
+                    width: 6px;
+                    height: 6px;
+                    top: 7px;
+                    left: -18px;
+                }
+            }
+
+            
+        }
+    }
+}

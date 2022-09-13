@@ -70,14 +70,14 @@
 
     &__info {
         
-        h2 {
+        &__header {
             font-size: 48px;
             line-height: 72px;
             font-weight: bold;
             color: $white;
         }
 
-        p {
+        &__text {
             width: 416px;
             font-size: 14px;
             line-height: 21px;
@@ -86,9 +86,9 @@
             margin: 20px 0;
         }
 
-        .more {
-            margin-top: 40px;
-            margin-bottom: 40px;
+        &__more {
+            margin: 40px 0;
+           
             a {
                 font-size: 18px;
                 line-height: 22px;
@@ -100,28 +100,29 @@
                 border: 1px solid $dgreen;
             } 
         }
-    }
-    .button {
-        display: flex;
-        margin-left: 367px;
 
-        &__arrow {
-            width: 120px;
-            height: 50px;
-            border: 1px solid $white;
+        &__button {
             display: flex;
-
-            &_left {
-                background-image: url(../images/arrow-left.png);
-                width: 60px;
+            margin-left: 367px;
+        
+            &__arrow {
+                width: 120px;
                 height: 50px;
-                
-            }
-
-            &_right {
-                background-image: url(../images/arrow-right.png);
-                width: 60px;
-                height: 50px;
+                border: 1px solid $white;
+                display: flex;
+        
+                > .button__arrow_left {
+                    background-image: url(../images/arrow-left.png);
+                    width: 60px;
+                    height: 50px;
+        
+                }
+        
+                > .button__arrow_right {
+                    background-image: url(../images/arrow-right.png);
+                    width: 60px;
+                    height: 50px;
+                }
             }
         }
     }
@@ -136,7 +137,7 @@
         
         a {
             @include for__other;
-            padding: 27px 199px;
+            padding: 26px 199px;
             background-color: $dgreen;
         }
     }
@@ -146,7 +147,7 @@
 
         a {
             @include for__other;
-            padding: 27px 82px;
+            padding: 26px 82px;
             background-color: $lgreen;
         }
     }
@@ -156,7 +157,7 @@
 
         a {
             @include for__other;
-            padding: 27px 97px;
+            padding: 26px 97px;
             background-color: $dgreen;
         }
     }

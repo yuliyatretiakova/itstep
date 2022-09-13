@@ -16,3 +16,59 @@
     text-decoration: none;
     color: $white;
 }
+
+@mixin news {
+    width: 446px;
+    font-size: 18px;
+    line-height: 150%;
+    color: $white;
+    margin: 0;
+    text-decoration: none;
+}
+
+@mixin special-offers-picture {
+    background-repeat: no-repeat;
+    width: 306px;
+    background-color: $dgreen;  
+}
+
+@mixin special-offers {
+    &__button {
+            width: 148px;
+            background-color: $lgreen;
+            padding: 10px 15px;
+            margin: 31px 128px 159px 30px;
+            display: flex;
+            justify-content: center;
+    
+            >a {
+                font-size: 18px;
+                line-height: 21px;
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    
+    &__bottom {
+        display: flex;
+    
+        &_text {
+            width: 181px;
+            font-size: 21px;
+            line-height: 150%;
+            font-weight: bold;
+            color: $white;
+            text-decoration: none;
+            margin: 25px 15px 25px 30px;
+        }
+    
+        &_arrow {
+            background-image: url(../images/Frame-right.png);
+            width: 50px;
+            height: 40px;
+            border: 1px solid $white;
+            background-repeat: no-repeat;
+            margin: 35px 0px;
+        }
+    }
+}

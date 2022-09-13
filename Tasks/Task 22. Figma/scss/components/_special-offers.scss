@@ -1,0 +1,58 @@
+.special-offers-all {
+    background-image: url(../images/bg-special-offers.png);
+    background-repeat: repeat-x;
+    padding-top: 80px;
+}
+
+.special-offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__header {
+
+        > h2 {
+            font-size: 48px;
+            line-height: 150%;
+            font-weight: bold;
+            color: $dgreen;
+            margin: 0;
+            padding-bottom: 60px;
+        }
+        
+    }
+
+    &__blocks {
+       display: flex;
+       justify-content: space-between;
+       
+
+        &__computer {
+            background-image: url(../images/computer.jpg);
+            margin: 0 12px;
+            @include special-offers-picture;
+            @include special-offers;
+        }
+
+        &__dentistry {
+            background-image: url(../images/dentistry.jpg);
+            margin: 0 12px;
+            @include special-offers-picture; 
+            @include special-offers;
+        }
+
+        &__laboratory {
+            background-image: url(../images/laboratory.jpg);
+            margin: 0 12px;
+            @include special-offers-picture;
+            @include special-offers;
+        }
+
+        &__surgery {
+            background-image: url(../images/surgery.jpg);
+            margin: 0 12px;
+            @include special-offers-picture;
+            @include special-offers;
+        }
+    }
+}
