@@ -1,0 +1,122 @@
+html, body {
+  font-family: Mulish;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1180px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 1780px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+}
+
+.header__logo {
+  width: 200px;
+  padding: 0 70px;
+}
+
+.header__menu {
+  width: 558px;
+  padding: 58px 132px;
+}
+.header__menu ul {
+  width: 558px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.header__menu ul li a {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+  margin-right: 50px;
+}
+.header__menu ul li a:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.header__lang {
+  width: 65px;
+}
+.header__lang ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+.header__lang ul > li > a {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding: 2px;
+}
+.header__lang ul .header__lang_en {
+  border-right: 1px solid #000000;
+  list-style: none;
+  padding-right: 2px;
+}
+
+.header__button {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  background-color: #F6523C;
+  padding: 22px 43.5px;
+}
+.header__button a {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
