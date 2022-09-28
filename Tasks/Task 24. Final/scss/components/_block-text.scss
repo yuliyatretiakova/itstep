@@ -1,0 +1,41 @@
+.block-text-all {
+    background-color: $black;
+    padding: 220px 0;
+}
+
+.block-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-text__header {
+    width: 1300px;
+    margin-bottom: 160px;
+
+    >h2 {
+        color: $white;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+.block-text__skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__communication {
+        background-image: url(../img/bi_chat-left.png);
+       @include block-text-cards;
+    }
+
+    &__individuality {
+        background-image: url(../img/bi_globe2.png);
+        @include block-text-cards;
+    }
+
+    &__speed {
+        background-image: url(../img/bi_lightning-charge.png);
+        @include block-text-cards;
+    }
+}

@@ -1,0 +1,78 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/график.svg);
+    background-repeat: no-repeat;
+    background-position: 990px 215px;
+    padding: 80px 0 70px;
+}
+
+.main__header {
+    width: 1132px;
+    margin-bottom: 40px;
+}
+
+.main__text {
+    width: 820px;
+    margin-bottom: 100px;
+
+    p {
+        font-size: 20px;
+        line-height: 160%;
+        font-weight: 300;
+        color: $black;
+    }
+}
+
+.main__services {
+    display: flex;
+    flex-direction: row;
+
+    &__list {
+        padding-right: 135px;
+        border-right: 1px solid $black;
+
+        > ul {
+            list-style: none;
+            padding-inline-start: 0;
+            margin: 0;
+
+            > li {
+                > a {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 290%;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+            }
+
+            li:first-child > a {
+                color: $coral;
+            }
+        }
+    }
+
+    &__meaning {
+
+        &_card {
+            width: 438px;
+            margin-left: 42px;
+
+            > h4 {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 28px;
+                text-transform: uppercase;
+                color: $black
+            }
+
+            > p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+}

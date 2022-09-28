@@ -1,0 +1,110 @@
+footer {
+    background-color: $black;
+    padding: 70px 0 40px;
+}
+
+.footer {
+    @include footer-flex;    
+}
+
+.footer__summary {
+    width: 50%;
+    @include flex-row;
+}
+
+.footer__summary__logo {
+    margin: 0;
+}
+
+.footer__summary__product {
+    width: 63%;
+    @include flex-row;
+}
+
+.footer__summary__product__company {
+    @include footer-summary-product;
+   
+}
+
+.footer__summary__product__services {
+    @include footer-summary-product;
+
+    &_list > ul > li > a {
+        text-transform: uppercase;
+    }
+}
+
+.footer__connection__contacts {
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+
+    &_header {
+        margin: 0 0 47px;
+
+        > h3 {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: uppercase;
+            margin: 0;
+            color: $white;
+        }
+    }
+
+    &__phone {
+        width: 238px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &_number {
+
+            > a {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $white;
+            }    
+        }
+    }
+
+    &__address {
+        width: 344px;
+        margin: 21px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > address {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            font-style: normal;
+            color: $white;
+        }
+    }
+
+    &__email {
+        width: 237px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &_content {
+
+            > a {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}

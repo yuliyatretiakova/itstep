@@ -1,0 +1,60 @@
+.technology-all {
+    background-color: $black;
+    padding: 160px 0;
+}
+
+.technology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.technology__title {
+    width: 395px;
+
+    &__header {
+        padding-bottom: 30px;
+
+        > h2 {
+            font-weight: 600;
+            color: $white;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+
+    &__text {
+
+        > p {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: $white;
+            margin: 0;
+        }
+    }
+}
+
+.technology__work-stages {
+    width: 1068px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.technology__work-stages__1 {
+    @include work-stages;
+}
+
+.technology__work-stages__2 {
+    @include work-stages;
+}
+
+.technology__work-stages__3 {
+    @include work-stages;
+}
+
+.technology__work-stages__4 {
+    @include work-stages;
+    border-bottom: 2px solid $white;
+}

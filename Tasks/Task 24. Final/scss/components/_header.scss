@@ -7,12 +7,11 @@
 
 .header__logo {
     width: 200px;
-    padding: 0 70px;
 }
 
 .header__menu {
     width: 558px;
-    padding: 58px 132px;
+    margin: 0 400px 0 110px;
 
     ul {
         width: 558px;
@@ -29,10 +28,6 @@
                 font-weight: 400;
                 text-decoration: none;
                 color: $black;
-                margin-right: 50px;
-            }
-             a:nth-last-child(1) {
-                margin-right: 0;
             }
         }   
     } 
@@ -56,23 +51,22 @@
             color: $black;
             letter-spacing: 0.01em;
             text-transform: uppercase;
-            padding: 2px;
+            padding: 5px;
         }
 
         .header__lang_en {
             border-right: 1px solid $black;
-            list-style: none;
-            padding-right: 2px;
+            text-decoration: none;
+            padding-right: 5px;
         }
     }
 }
 
 .header__button {
-    width: 240px;
     display: flex;
     justify-content: center;
     background-color: $coral;
-    padding: 22px 43.5px;
+    padding: 22px 44px;
 
     a {
         font-size: 18px;
@@ -81,4 +75,8 @@
         color: $white;
         text-decoration: none;
     }
+}
+
+.header__mobile {
+    display: none;
 }
