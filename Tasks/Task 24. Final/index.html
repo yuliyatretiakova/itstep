@@ -17,26 +17,32 @@
             <div class="header__logo">
                 <a href="#"><img src="./img/logo.svg" alt="Логотип"> </a>
             </div>
-            <div class="header__menu">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Блог</a></li>
-                </ul>
+            <div class="header__content">
+                <div class="header__content__info">
+                    <div class="header__content__info__menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Портфолио</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__content__settings">
+                    <div class="header__content__settings__lang">
+                        <ul>
+                            <li><a href="#" class="english">En</a></li>
+                            <li><a href="#" class="russian">Ru</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__content__settings__button">
+                        <span><a href="#">Связаться с нами</a></span>
+                    </div>
+                </div>                
             </div>
-            <div class="header__lang">
-                <ul>
-                    <li><a href="#" class="header__lang_en">En</a></li>
-                    <li><a href="#" class="header__lang_ru">Ru</a></li>
-                </ul>
-            </div>
-            <div class="header__button">
-                <a href="#">Связаться с нами</a>
-            </div>
-            <div class="header__mobile">
-                <a href="#"></a>
+            <div class="mobile__open">
+                <a href="#"><img src="./img/gamburger-menu.png" alt=""></a>
             </div>
         </div>
     </header>
@@ -57,7 +63,16 @@
             <div class="main__services">
                 <div class="main__services__list">
                     <ul>
-                        <li><a href="#">Веб-разработка</a></li>
+                        <li>
+                            <a href="#">Веб-разработка</a>
+                            <div class="main__services__list-mobile">
+                                <img src="./img/Files transfer.png" alt="Веб-разработка">
+                                <p>
+                                    Разработаем сайты и онлайн-сервисы:
+                                    от строгих корпоративных до анимированных фестивальных.
+                                </p>
+                            </div>
+                        </li>
                         <li><a href="#">Софт</a></li>
                         <li><a href="#">Аналитика</a></li>
                         <li><a href="#">UX/Ui дизайн</a></li>
@@ -65,7 +80,7 @@
                 </div>
                 <div class="main__services__meaning">
                     <div class="main__services__meaning_card">
-                        <a href="#"><img src="./img/Files transfer.png" alt="Веб-разработка"></a>
+                        <img src="./img/Files transfer.png" alt="Веб-разработка">
                         <h4>Веб-разработка</h4>
                         <p>Разработаем сайты и онлайн-сервисы: от строгих корпоративных до анимированных фестивальных.</p>
                     </div>
@@ -125,8 +140,7 @@
                     </p>
                 </div>
                 <div class="projects__text_button">
-                    <a href="#">Смотреть ещё</a>
-                    <a href="#"><img src="./img/arrow-up-right.png" alt="стрелка"></a>
+                    <span><a href="#">Смотреть ещё </a></span>    
                 </div>
             </div>
             <div class="projects__cards">
@@ -241,8 +255,7 @@
                     </p>
                 </div>
                 <div class="blog__title_button">
-                <a href="#">Смотреть ещё</a>
-                <a href="#"><img src="./img/arrow-up-right.png" alt="стрелка"></a>
+                    <span><a href="#">Смотреть ещё</a></span>
                 </div>
             </div>
             <div class="blog__cards">
@@ -314,57 +327,48 @@
                     </div>
                 </div>
             </div>
-            <div class="feedback__form">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="feedback__form_name">
-                            <input type="text" name="name" id="name" value="" placeholder="Имя">
-                        </div> 
-                    </div>
-                    <div class="col-6">
-                        <div class="feedback__form_phone">
-                            <input type="tel" name="phone" id="phone" value="" placeholder="Номер телефона">
-                        </div>   
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="feedback__form_surname">
-                            <input type="text" name="surname" id="surname" value="" placeholder="Фамилия">
-                        </div>    
-                    </div>
-                    <div class="col-6">
-                        <div class="feedback__form_email">
-                            <input type="email" name="email" id="email" value="" placeholder="Email">
-                        </div>    
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feedback__form_message">
-                            <input type="text" name="message" id="message" value placeholder="ваше сообщение">
+            <form action="#" method="post" class="feedback__form">
+                <div class="feedback__form__first-row">
+                    <div class="feedback__form__first-row_name">
+                        <input type="text" name="name"  value="" placeholder="Имя">
+                    </div> 
+                    <div class="feedback__form__first-row_phone">
+                        <div class="feedback__form__first-row_phone-number">
+                            <input type="tel" class="error" name="phone" value="" placeholder="Номер телефона">
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feedback__form_confidentiality">
-                            <input type="checkbox" name="confidentiality[]" id="confidentiality" value="confidentiality">
-                            <label for="confidentiality">Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих
-                                персональных данных для целей, указанных в
-                                <a href="#">Политике конфиденциальности</a>.
-                            </label>
-                        </div> 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="feedback__form__button ">
-                            <span><a href="#">Отправить</a></span>
+                        <div class="error-text">
+                            Введите номер телефона
                         </div>
+                    </div>                   
+                </div>
+                <div class="feedback__form__second-row">       
+                    <div class="feedback__form__second-row_surname">
+                        <input type="text" name="surname"  value="" placeholder="Фамилия">
+                    </div>           
+                    <div class="feedback__form__second-row_email">
+                        <input type="email" name="email"  value="" placeholder="Email">
+                    </div>
+                </div>
+                <div class="feedback__form__third-row">        
+                    <div class="feedback__form__third-row_message">
+                        <textarea name="message" value="" placeholder="Ваше сообщение"></textarea>
+                    </div>
+                </div>
+                <div class="feedback__form__fourth-row">
+                    <div class="feedback__form__fourth-row_confidentiality">
+                        <input type="checkbox" class="checkbox" id="confidentiality" value="confidentiality">
+                        <label for="confidentiality">Я согласен с Политикой конфиденциальности и даю разрешение на обработку моих
+                            персональных данных для целей, указанных в
+                            <a href="#">Политике конфиденциальности</a>.
+                        </label>
+                    </div> 
+                </div>
+                <div class="feedback__form__fifth-row">    
+                        <div class="feedback__form__fifth-row__button ">
+                        <span><a href="#">Отправить</a></span>
                     </div>
                 </div>   
-            </div>
+            </form>
         </div>
     </section>
     <footer>
@@ -436,21 +440,56 @@
                         </div>
                         <div class="footer__connection__contacts_networks">
                             <ul>
-                                <li><a href="#" class="telegram"></a></li>
-                                <li><a href="#" class="dribbble"></a></li>
-                                <li><a href="#" class="behance"></a></li>
-                                <li><a href="#" class="linkedin"></a></li>
+                                <li><a href="#" class="telegram"><img src="./img/icon_telegram.png" alt="телеграм"></a></li>
+                                <li><a href="#" class="dribbble"><img src="./img/icon_dribbble.png" alt="дрибл"></a></li>
+                                <li><a href="#" class="behance"><img src="./img/icon_behance.png" alt="беханс"></a></li>
+                                <li><a href="#" class="linkedin"><img src="./img/icon_linkedin.png" alt="линкедин"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>    
-            </div>
-            <div class="copyright">
-                <div class="copyright_text">
-                    © 2007-2022 sparkit. All Rights Reserved. Privacy Policy.
-                </div>
+            </div>   
+        </div>
+        <div class="copyright">
+            <div class="copyright_text">
+                © 2007-2022 sparkit. All Rights Reserved. Privacy Policy.
             </div>
         </div>
     </footer>
+    <div class="mobile">
+        <div class="mobile__head">
+            <div class="mobile__head_logo">
+                <a href="#"><img src="./img/logo-black.png" alt="Логотип"></a>
+            </div>
+            <div class="mobile__head_close">
+                <a href="#"><img src="./img/close.png" alt="Крестик"></a>
+            </div>
+        </div>
+        <div class="mobile__content">
+            <div class="mobile__content__info">
+                <div class="mobile__content__info__menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile__content__settings">
+                <div class="mobile__content__settings__button">
+                    <a href="#">Связаться с нами</a>
+                    <a href="#"><img src="./img/arrow-white.png" alt="стрелка"></a>
+                </div>
+                <div class="mobile__content__settings__lang">
+                    <ul>
+                        <li><a href="#" class="english">En</a></li>
+                        <li><a href="#" class="russian">Ru</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

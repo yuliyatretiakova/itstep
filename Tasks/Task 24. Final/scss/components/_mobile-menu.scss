@@ -1,0 +1,96 @@
+.mobile {
+    background-color: $black;
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 440px;
+
+    @media (min-width: 768px) {
+        max-width: 768px;
+        padding: 30px 34px;
+    }
+}
+
+.mobile__head {
+    @include flex-row-space-between;
+    margin-bottom: 70px;
+}
+
+.mobile__content {
+    
+    &__info {
+        margin-bottom: 60px;
+
+        &__menu {
+
+            > ul {
+                list-style: none;
+                padding: 0;
+
+                > li {
+                    margin-bottom: 40px;
+                    > a {
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 35px;
+                        text-decoration: none;
+                        color: $white;
+                    }
+
+                    li:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__settings {
+
+        &__button {
+            width: 300px;
+            border: 1px solid $white;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 131px;
+            
+            > a {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+                letter-spacing: 0.01em;
+                text-decoration: none;
+                color: $white;
+                padding: 20px 0;
+            }
+        }
+
+        &__lang {
+            width: 65px;
+
+            > ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                justify-content: space-between;
+                padding-inline-start: 0;
+
+                >li {
+                    > a {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 130%;
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        color: $white;
+                    }
+                }
+
+                .english {
+                    border-right: 1px solid $white;
+                    text-decoration: none;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,64 +1,157 @@
 .projects-all {
     background-color: $white;
-    padding: 160px 0;
+    padding: 80px 0;
+    
+    @media (min-width: 1280px) {
+        padding: 160px 0;
+    }    
 }
 
 .projects {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 1280px) {
+        flex-direction: row;
+    }   
 }
 
 .projects__text {
     display: flex;
     flex-direction: column;
-    width: 413px;
+    width: 400px;
+    margin-bottom: 60px;
 
+    @media (min-width: 768px) {
+       margin-bottom: 48px;
+    }
+    
+    
+    @media (min-width: 1280px) {
+        width: 340px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1920px) {
+        width: 413px;
+    }   
+    
     &_header {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
 
+        @media (min-width: 1280px) {
+            margin-bottom: 30px;
+        }   
+        
         > h2 {
+            font-size: 24px;
             text-transform: uppercase;
             margin: 0;
 
             span {
                 color: $coral;
             }
+
+            @media (min-width: 1280px) {
+                font-size: 40px;
+            }  
         }
     }
 
     &_meaning {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+
+        @media (min-width: 1280px) {
+            margin-bottom: 30px;
+        }
 
         > p {
             font-weight: 400;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 150%;
             letter-spacing: 0.01em;
             margin: 0;
+
+            @media (min-width: 1280px) {
+                font-size: 24px;
+            }    
         }
     }
 
     &_button {
-        width: 291px;
-        @include button-arrow
+        display: flex;
+
+        > span {
+            display: flex;
+            background-color: $white;
+            width: 238px;
+            border: 1px solid $black;
+            background-image: url(../img/arrow-up-right.png);
+            background-repeat: no-repeat;
+            background-position: 185px;
+
+            @media (min-width: 1280px) {
+                width: 297px;
+                background-position: 230px;    
+            }
+
+            @media (min-width: 1920px) {
+                width: 291px;
+            } 
+                
+            >a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                letter-spacing: 0.01em;
+                text-decoration: none;
+                color: $black;
+                padding: 20px 0 20px 40px;
+
+                @media (min-width: 1280px) {
+                    font-size: 20px;
+                }
+
+                &:hover {
+                color: $white;
+                }
+            }
+            
+            &:hover {
+                background-color: $coral;
+                border: none;
+                background-image: url(../img/arrow-white.png);
+            }
+        }      
     }
 }
 .projects__cards {
-    width: 1270px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    flex-direction: column;
+    
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        @media (min-width: 1280px) {
+            width: 760px;
+        }
+        
+        @media (min-width: 1920px) {
+            width: 1270px;
+        }
+    
     &__mobile-tracker {
-       @include project-cards;
+        @include project-card;   
     }
 
     &__univer-today {
-        @include project-cards;
+        @include project-card;
     }
 
     &__study-blog {
-        @include project-cards;
+        @include project-card;
     }
 }

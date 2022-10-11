@@ -1,26 +1,65 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/график.svg);
-    background-repeat: no-repeat;
-    background-position: 990px 215px;
     padding: 80px 0 70px;
+    background-image: none;
+    
+    @media (min-width: 1920px) {
+        background-image: url(../img/график.svg);
+        background-repeat: no-repeat;
+        background-position: 990px 280px;
+    }  
 }
 
 .main__header {
-    width: 1132px;
-    margin-bottom: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+        width: 555px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 1132px;
+        margin-bottom: 40px;
+    }
+
+    > h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 150%;
+
+        @media (min-width: 768px) {
+            line-height: 120%;
+        }
+
+        @media (min-width: 1280px) {
+            font-size: 80px;
+        }
+    }
 }
 
 .main__text {
-    width: 820px;
-    margin-bottom: 100px;
+    width: 400px;
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        width: 700px;
+        margin-bottom: 49px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 820px;
+        margin-bottom: 100px;
+    }
 
     p {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 160%;
         font-weight: 300;
         color: $black;
+
+        @media (min-width: 1280px) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -29,32 +68,75 @@
     flex-direction: row;
 
     &__list {
-        padding-right: 135px;
-        border-right: 1px solid $black;
 
+        @media (min-width: 768px) {
+            padding-right: 32px;
+        }
+        
+
+        @media (min-width: 1280px) {
+            padding-right: 135px;
+        }
+        
         > ul {
             list-style: none;
             padding-inline-start: 0;
             margin: 0;
 
             > li {
+                padding-bottom: 33px;
+
                 > a {
                     font-weight: 600;
                     font-size: 20px;
-                    line-height: 290%;
+                    line-height: 25px;
                     text-decoration: none;
                     text-transform: uppercase;
                     color: $black;
+
+                    &:hover {
+                        color: $coral;
+                    }
+                    
+                }
+
+                > .main__services__list-mobile {
+                    width: 370px;
+                    border-left: 1px solid $black;
+                    padding-left: 30px;
+                    margin-top: 20px;
+
+                    > p {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 140%;
+                        margin-top: 15px;
+                    }
+
+                    @media (min-width: 768px) {
+                        display: none;
+                    }
                 }
             }
 
-            li:first-child > a {
-                color: $coral;
+            li:first-child {
+                padding-bottom: 20px;
+
+                @media (min-width: 768px) {
+                    padding-bottom: 33px;
+                }
             }
         }
     }
 
     &__meaning {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+
+        border-left: 1px solid $black;
 
         &_card {
             width: 438px;

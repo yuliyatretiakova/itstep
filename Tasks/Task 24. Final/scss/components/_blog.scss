@@ -1,65 +1,198 @@
 .blog-all {
     background-color: $lgray;
-    padding: 160px 0;
+    padding: 80px 0;
+
+    @media (min-width: 1280px) {
+        padding: 160px 0;
+    }
+    
 }
 
 .blog {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 1280px) {
+        flex-direction: row;
+        justify-content: space-between;
+    } 
 }
 
 .blog__title {
     display: flex;
     flex-direction: column;
-    width: 353px;
+    width: 294px;
+    margin-bottom: 60px;
+    
+    @media (min-width: 1280px) {
+        width: 297px;
+        margin-bottom: 0;
+    }
 
+    @media (min-width: 1920px) {
+        width: 353px;
+    }
+    
     &_header {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+
+        @media (min-width: 1280px) {
+            margin-bottom: 30px;
+        }
+       
     
         >h2 {
+            font-weight: 500;
+            font-size: 24px;
             text-transform: uppercase;
             margin: 0;
+
+            @media (min-width: 1280px) {
+                font-size: 40px;
+            }
         }
     }
 
     &_meaning {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
+        @media (min-width: 1280px) {
+            margin-bottom: 30px;
+        }
+        
         > p {
             font-weight: 400;
-            font-size: 24px;
+            font-size: 18px;
             line-height: 140%;
             letter-spacing: 0.01em;
             margin: 0;
+
+            @media (min-width: 1280px) {
+                font-size: 24px;
+            }
         }
     }
 
     &_button {
-        width: 278px;
-        @include button-arrow
+        display: flex;
+
+        > span {
+            display: flex;
+            background-color: $lgray;
+            width: 238px;
+            border: 1px solid $black;
+            background-image: url(../img/arrow-up-right.png);
+            background-repeat: no-repeat;
+            background-position: 185px;
+
+            @media (min-width: 1280px) {
+                width: 278px;
+                background-position: 230px;
+            }
+
+            &:hover {
+                background-color: $coral;
+                border: none;
+                background-image: url(../img/arrow-white.png);
+            }
+
+            > a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                letter-spacing: 0.01em;
+                text-decoration: none;
+                color: $black;
+                padding: 20px 0 20px 40px;
+
+                &:hover {
+                    color: $white;
+                }
+            
+                @media (min-width: 1280px) {
+                    font-size: 20px;
+                }
+            }
+        } 
     }
 }
 
 .blog__cards {
-    width: 1330px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    @media (min-width: 1280px) {
+        width: 790px;
+    }
+
+    @media (min-width: 1920px) {
+        width: 1330px;
+    }
+    
 
     &__results {
-        padding: 80px 50px 106px;
-        @include blog-cards;
+        padding: 80px 35px 106px;
+        margin-bottom: 40px;
+
+        @media (min-width: 768px) {
+            padding: 30px 15px 92px;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1280px) {
+            padding: 80px 30px 76px;
+        }
+
+        @media (min-width: 1920px) {
+            padding: 80px 50px 106px;
+        }
+        
+        @include blog-card;
     }
     
     &__analytics {
-        padding: 80px 50px 130px;
-        @include blog-cards;
+        padding: 80px 35px 80px;
+        margin-bottom: 40px;
+
+        @media (min-width: 768px) {
+            padding: 30px 15px 118px;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1280px) {
+            padding: 80px 30px 102px;
+        }
+
+        @media (min-width: 1920px) {
+            padding: 80px 50px 130px;
+        }
+
+        @include blog-card;
     }
 
     &__cloud {
-        padding: 80px 50px;
-        @include blog-cards;
+        padding: 80px 35px;
+
+        @media (min-width: 768px) {
+            padding: 30px 15px 40px;
+        }
+
+        @media (min-width: 1280px) {
+            padding: 80px 30px 50px;
+        }
+
+        @media (min-width: 1920px) {
+            padding: 80px 50px;
+        }
+        
+        @include blog-card;
         margin-right: 0
     }
 }

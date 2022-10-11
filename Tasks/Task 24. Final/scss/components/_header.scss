@@ -1,82 +1,152 @@
 .header {
-    display: flex;
+    @include flex-row-space-between;
     align-items: center;
-    justify-content: space-between;
-    height: 140px;
+    height: 100px;
+    
+    @media (min-width: 1280px) {
+        height: 140px;
+    }    
 }
 
 .header__logo {
-    width: 200px;
-}
+    width: 180px;
 
-.header__menu {
-    width: 558px;
-    margin: 0 400px 0 110px;
-
-    ul {
-        width: 558px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        list-style: none;
-        padding: 0;
-
-        li {
-            a {
-                font-size: 20px;
-                line-height: 25px;
-                font-weight: 400;
-                text-decoration: none;
-                color: $black;
-            }
-        }   
-    } 
-}
-
-.header__lang {
-    width: 65px;
-    
-    
-    ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-        justify-content: space-between;
-        padding-inline-start: 0;
-        
-        > li > a {
-            font-size: 18px;
-            line-height: 130%;
-            font-weight: 400;
-            color: $black;
-            letter-spacing: 0.01em;
-            text-transform: uppercase;
-            padding: 5px;
-        }
-
-        .header__lang_en {
-            border-right: 1px solid $black;
-            text-decoration: none;
-            padding-right: 5px;
-        }
+    @media (min-width: 1920px) {
+        width: 200px;
     }
 }
 
-.header__button {
-    display: flex;
-    justify-content: center;
-    background-color: $coral;
-    padding: 22px 44px;
-
-    a {
-        font-size: 18px;
-        line-height: 23px;
-        font-weight: 400;
-        color: $white;
-        text-decoration: none;
-    }
-}
-
-.header__mobile {
+.header__content {
     display: none;
+    
+    @media (min-width: 1280px) {
+        @include flex-row-space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    &__info {
+        
+        &__menu {
+        
+            > ul {
+                width: 467px;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0;
+
+                @media (min-width: 1920px) {
+                    width: 558px;
+                }
+               
+                > li {
+                    > a {
+                        font-size: 18px;
+                        line-height: 23px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: $black;
+
+                        &:hover {
+                            color: $coral;
+                        }
+                        
+                        @media (min-width: 1920px) {
+                            font-size: 20px;
+                            line-height: 25px;
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+    &__settings {
+        width: 333px;
+        @include flex-row-space-between;
+
+        @media (min-width: 1920px) {
+            width: 340px;
+        }
+        
+        &__lang {
+            width: 58px;
+
+            @media (min-width: 1920px) {
+                width: 65px;
+            }
+        
+            ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                justify-content: space-between;
+                padding-inline-start: 0;
+        
+                > li > a {
+                    font-size: 16px;
+                    line-height: 130%;
+                    font-weight: 400;
+                    color: $black;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+
+                    @media (min-width: 1920px) {
+                        font-size: 18px;
+                    }    
+                }
+
+                .english {
+                    border-right: 1px solid $black;
+                    text-decoration: none;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        &__button {
+            display: flex;
+            justify-content: center;
+
+            > span {
+                display: flex;
+                background-color: $coral;
+                width: 245px;
+   
+                a {
+                    font-size: 18px;
+                    line-height: 23px;
+                    font-weight: 400;
+                    color: $white;
+                    text-decoration: none;
+                    padding: 22px 44px;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+
+                &:hover {
+                    background-color: $white;
+                    border: 1px solid $black;
+                }
+            }   
+        }
+    }    
+}
+
+.mobile__open {
+    display: flex;
+    width: 27px;
+    height: 21px;
+
+    > a {
+        
+        background-image: url(../img/gamburger-menu.png);
+    }
+    
+    @media (min-width: 1280px){
+        display: none;
+    }
 }
