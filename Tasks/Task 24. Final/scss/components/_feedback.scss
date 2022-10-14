@@ -207,6 +207,10 @@
                     border: none;
                     border-bottom: 1px solid $coral;
 
+                    .error {
+                            border-bottom: 1px solid $coral;
+                        }
+
                     &:focus {
                         color: $black;
                         border-bottom: 1px solid $black;
@@ -224,7 +228,7 @@
                     
                     @media (min-width: 1920px) {
                         width: 359px;        
-                    }
+                    }    
                 }
             }    
         }

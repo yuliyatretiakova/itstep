@@ -113,6 +113,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 1920px) {
   .header__content__settings {
@@ -142,6 +143,7 @@ h3 {
   color: #000000;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 @media (min-width: 1920px) {
   .header__content__settings__lang ul > li > a {
@@ -150,19 +152,21 @@ h3 {
 }
 .header__content__settings__lang ul .english {
   border-right: 1px solid #000000;
-  text-decoration: none;
-  padding-right: 5px;
+  padding-right: 7px;
+}
+.header__content__settings__lang ul .english:focus {
+  border-bottom: 1px solid #000000;
+}
+.header__content__settings__lang ul .russian:focus {
+  border-bottom: 1px solid #000000;
 }
 .header__content__settings__button {
   display: flex;
   justify-content: center;
-}
-.header__content__settings__button > span {
-  display: flex;
   background-color: #F6523C;
   width: 245px;
 }
-.header__content__settings__button > span a {
+.header__content__settings__button a {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -170,10 +174,10 @@ h3 {
   text-decoration: none;
   padding: 22px 44px;
 }
-.header__content__settings__button > span a:hover {
+.header__content__settings__button a:hover {
   color: #000000;
 }
-.header__content__settings__button > span:hover {
+.header__content__settings__button:hover {
   background-color: #FFFFFF;
   border: 1px solid #000000;
 }
@@ -1918,6 +1922,9 @@ h3 {
   border: none;
   border-bottom: 1px solid #F6523C;
 }
+.feedback__form__first-row_phone-number input[type=tel] .error {
+  border-bottom: 1px solid #F6523C;
+}
 .feedback__form__first-row_phone-number input[type=tel]:focus {
   color: #000000;
   border-bottom: 1px solid #000000;
@@ -2389,6 +2396,9 @@ footer {
     line-height: 23px;
   }
 }
+.footer__summary__product__company_list > ul > li > a:hover {
+  color: #F6523C;
+}
 .footer__summary__product__company_list > ul > li:last-child {
   margin-bottom: 0;
 }
@@ -2443,6 +2453,9 @@ footer {
     font-size: 18px;
     line-height: 23px;
   }
+}
+.footer__summary__product__services_list > ul > li > a:hover {
+  color: #F6523C;
 }
 .footer__summary__product__services_list > ul > li:last-child {
   margin-bottom: 0;
@@ -2655,6 +2668,9 @@ footer {
   text-decoration: none;
   color: #FFFFFF;
 }
+.mobile__content__info__menu > ul > li > a:hover {
+  color: #F6523C;
+}
 .mobile__content__info__menu > ul > li li:last-child {
   margin-bottom: 0;
 }
@@ -2674,6 +2690,10 @@ footer {
   color: #FFFFFF;
   padding: 20px 0;
 }
+.mobile__content__settings__button:hover {
+  background-color: #F6523C;
+  border: none;
+}
 .mobile__content__settings__lang {
   width: 65px;
 }
@@ -2691,10 +2711,16 @@ footer {
   line-height: 130%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  text-decoration: none;
   color: #FFFFFF;
 }
 .mobile__content__settings__lang > ul .english {
   border-right: 1px solid #FFFFFF;
-  text-decoration: none;
   padding-right: 8px;
+}
+.mobile__content__settings__lang > ul .english:focus {
+  border-bottom: 1px solid #FFFFFF;
+}
+.mobile__content__settings__lang > ul .russian:focus {
+  border-bottom: 1px solid #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

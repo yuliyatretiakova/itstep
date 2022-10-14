@@ -334,7 +334,11 @@
                     @media (min-width: 1280px) {
                         font-size: 18px;
                         line-height: 23px;
-                    }      
+                    } 
+                    
+                    &:hover {
+                        color: $coral;
+                    }
                 }
             }
     
