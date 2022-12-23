@@ -1,0 +1,267 @@
+footer{
+    margin-top: 189px;
+    background-color: $yellow;
+    background-image: url(../img/contact-lg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 40%;
+    @media (min-width: 1200px){
+            background-size: 100% auto;
+        }  
+}
+.contact{
+    &_form{
+        background: $white;
+        padding: 70px 50px 50px;
+        margin-top: -50px;
+        width: 100%;
+        @media (min-width: 992px){
+            float: left;
+            width: 513px;
+        } 
+    }
+
+    &_form_title{
+        margin-bottom: 43px;
+        h2{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+    }
+    .mb-3{
+        margin-bottom: 12px !important;
+        display: flex;
+
+        input[type="text"]{
+            border: 1px solid $border;
+            padding: 13px 10px 12px 10px;
+            color: $formcolor;
+            font-size: 12px;
+            line-height: 15px;
+            border-radius: 0;
+        }
+        textarea{
+            border: 1px solid $border;
+            padding: 13px 10px 12px 10px;
+            color: $formcolor;
+            font-size: 12px;
+            line-height: 15px;
+            height: 100px;
+            border-radius: 0;
+            resize: none;
+        }
+        button{
+            display: block;
+            color: $white;
+            background: $black;
+            padding: 15px 31px;
+            font-size: 14px;
+            line-height: 21px;  
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+            @media (min-width: 768px){
+                width: auto;
+            } 
+            &:hover{
+                background-color: $yellow;
+                color: $white;
+                }
+            }
+            .styled_checkbox{
+                width: 33%;
+                position: relative;
+                padding-top: 30px;
+                margin-bottom: 18px;
+                label{
+                    font-size: 12px;
+                    line-height: 15px;
+                    cursor: pointer;
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 17px;
+                        height: 17px;
+                        border: 1px solid $border;
+                        top: -24px;
+                    }
+                }
+            
+            input{
+                display: none;
+
+                &:checked+label::after{
+                    top: -24px;
+                    left: 0;
+                    position: absolute;
+                    content: "";
+                    width: 17px;
+                    height: 17px;
+                    background-image: url("../img/check.png");
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    .contact_form_send{
+        flex-wrap: wrap;
+        @media (min-width: 768px){
+            flex-wrap: nowrap;
+        } 
+    }
+    .contact_form_send_button{
+        width: 100%;
+        @media (min-width: 768px){
+            width: 50%;
+        } 
+    }
+    .contact_form_error{
+        background: #F8F8F8;
+        border-left: 4px solid #FC7E7E;
+        padding: 6px 14px;
+        font-size: 9px;
+        line-height: 14px;
+        color: $formcolor;
+        margin-top: 11px;
+        width: 100%;
+        @media (min-width: 768px){
+            width: 50%;
+            margin-left: 11px;
+            margin-top: 0;
+        } 
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .contact_form_success{
+        background: #F8F8F8;
+        border-left: 4px solid #BDFC7E;
+        padding: 6px 14px;
+        font-size: 9px;
+        line-height: 14px;
+        color: $formcolor;
+        margin-top: 11px;
+        width: 100%;
+        @media (min-width: 768px){
+            width: 50%;
+            margin-left: 11px;
+            margin-top: 0;
+            } 
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+.contact{
+    > .contact_info_text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        @media (min-width: 992px){
+            display: none;
+        }        
+    }
+}
+.contact_info{
+    
+    > .contact_info_text{
+        display: none;
+        @media (min-width: 992px){
+            display: block;
+            font-size: 18px;
+            line-height: 27px;
+        }        
+    }    
+}
+.contact_info{
+    width: 100%;
+    @media (min-width: 992px){
+        width: calc(100% - 520px);
+        padding-left: 50px; 
+        float: left;
+    }       
+    &_text{
+        padding: 91px 40px 150px 0; 
+        @media (min-width: 992px){
+            padding: 45px 40px 100px 0;
+        }
+        @media (min-width: 1200px){
+            padding: 75px 40px 134px 0;
+        }
+        @media (min-width: 1400px){
+            padding: 91px 40px 150px 0; 
+        }
+        p{
+            margin-bottom: 20px;
+            color: $white;
+        }
+    }
+    &_links{
+        &_head{
+            h3{
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 15px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                margin-top: 50px;
+                @media (min-width: 768px){
+                    font-size: 12px;
+                    line-height: 18px;
+                }    
+            }
+        }
+        &_items{
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+            
+            @media (min-width: 768px){
+                justify-content:left;
+            }
+            a{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                text-decoration: none;
+                color: $black;
+                text-transform: uppercase;
+                @media (min-width: 768px){
+                    margin-right: 20px;
+                }
+                @media (min-width: 1200px){
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-right: 40px;
+                    
+                }     
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &_firma{
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        p{
+            margin-bottom: 0;
+            color: $infocolor;
+        }
+    }
+
+}
+.copyright{
+    padding: 58px 0 24px;
+    margin-bottom: 0;
+    color: $infocolor;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: uppercase;
+}

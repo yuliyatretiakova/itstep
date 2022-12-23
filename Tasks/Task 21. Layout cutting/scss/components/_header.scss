@@ -1,0 +1,98 @@
+.main-menu{
+    background-color: $bggray;
+   
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__mobile{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+
+        @media (min-width: 1024px){
+            display: none;
+        }
+        a{
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: $menucolor;
+            text-decoration: none;
+
+            &::before{
+                position: absolute;
+                content: "";
+                top: 12px;
+                width: 30px;
+                height: 2px;
+                background-color: $menucolor;
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                width: 30px;
+                height: 2px;
+                top: 32px;
+                background-color: $menucolor;
+            }
+        }
+    }
+
+    &__block{
+        margin: 0;
+        display: none;
+
+        @media (min-width: 1024px){
+            display: block;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            margin: 8px 0;
+
+            li{
+                padding: 10px;
+
+                a{
+                    font-size: 16px;
+                    color: $menucolor;
+                    text-decoration: none;
+                    padding: 8px 10px;
+                    
+
+                    &:hover{
+                        color: $violet;
+                    }
+                }
+            }
+        }
+    }
+
+    &__call{
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+
+        a{
+            display:flex;
+            align-self: stretch;
+            align-items: center;
+            background-color: transparent;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 1px solid $violet;
+            border-radius: 3px;
+            padding: 10px 20px;
+            text-decoration: none;
+
+            &:hover{
+
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.about{
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: center top;
+    padding-top: 91px;
+    overflow-x: hidden;
+    position: relative;
+    @media (min-width: 768px){
+        padding-top: 258px;
+        background-size: 100% auto;
+    }    
+    &::before{
+        content: "";
+        position: absolute;
+        background: url("../img/c3.png") no-repeat;
+        background-size: cover;
+        right: 0;
+        bottom: 30px;
+        z-index: 1000;
+        width: 215px;
+        height: 225px;
+        @media (min-width: 1200px){
+            width: 312px;
+            height: 323px;     
+            right: 0;
+            bottom: 0;       
+        }         
+    }
+
+    &_logo{
+        margin-bottom: 78px;
+        text-align: center;
+        @media (min-width: 768px){
+            text-align: left;
+        } 
+        img{
+            width: 242px;
+        }
+    }
+    &_text{
+        text-transform: uppercase;
+        margin-bottom: 37px;
+        font-weight: 600;
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        @media (min-width: 768px){
+            text-align: left;
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 500;
+        } 
+    }
+    &_desciption{
+        text-align: center;
+        padding-top: 37px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        @media (min-width: 768px){
+            text-align: left;
+            font-size: 16px;
+            line-height: 24px;
+        } 
+    }
+}
+.container_about{
+    background-color: $white;
+    padding: 68px 40px 105px;
+    position: relative;
+    margin-bottom: 111px;
+    &::after{
+        
+        position: absolute;
+        height: 100%;
+        top:0;
+        right: -300px;
+        width: 300px;
+        background: $white;
+        @media (min-width: 768px){
+            content: "";
+        }         
+    }
+}

@@ -1,0 +1,156 @@
+html{
+    background-image: url("d:/github/itstep/Tasks/Task 6/img/js rs.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    color: #000;
+}
+
+.right{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+h1{
+    font-family: Lato;
+    font-size: 24px;
+}
+
+dd{
+    margin-left: 0px;
+}
+
+ul .marker{
+    list-style: none;
+    line-height: 30px;
+}
+
+ul .marker::before{
+    content:"";
+    background:url(../img/marker\ rs.png);
+    float:left;
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+
+h2, h3{
+clear: left;
+}
+
+h2{
+    font-family: "Lato";
+    font-size: 18px;
+    text-shadow: 1px 1px #fff;
+}
+
+h3{
+    font-family: Lato;
+    font-size: 16px;
+   }
+
+
+p{
+    font-size: 14px;
+}
+
+.left{
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 2px solid #fff;
+    font-size: 14px;
+    vertical-align: middle;
+}
+th{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #fff;
+    background-color: rgb(30, 30, 177);
+  }
+
+th:nth-child(2){
+    text-align: left;
+}
+
+th:nth-child(4){
+    text-align: right;
+}
+
+  table td{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #fff;
+}
+
+tr:nth-child(2n+1){
+    background-color: rgb(140, 154, 247);
+}
+
+tr:nth-child(2n){
+    background-color: rgb(170, 212, 253);
+}
+
+td:nth-child(2n+1){
+    text-align: center;
+    }
+
+td:nth-child(4){
+    text-align: right;
+}
+
+.violet{
+    color: rgb(237, 60, 225);
+}
+
+.olive{
+    color: rgb(124, 221, 64);
+}
+
+.red{
+    color: rgb(236, 41, 41);
+}
+
+.flow{
+    width: 60%;
+    margin: 80px auto;
+    position: relative;
+}
+
+.center{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -125px;
+}
+
+.left1 {
+    float: left;
+    width: 49%;
+  }
+.right1 {
+    float: right;
+    width: 49%;
+  }
+.left1:before, .right1:before {
+    content: "";
+    width: 125px;
+    height: 800px;
+  }
+.left1:before {
+    float: right;
+  }
+.right1:before {
+    float: left;
+  }

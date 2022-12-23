@@ -1,0 +1,30 @@
+h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+h2{
+    font-size: 24px;
+    font-style: italic;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.clgreen{
+    color: green;
+}
+.clblue{
+    color: blue;
+}
+.clyellow{
+    color: yellow;
+}
+.clgold{
+    color: gold;
+}
+.claqua{
+    color: aqua;
+}
+.clolive{
+    color: darkolivegreen;
+}

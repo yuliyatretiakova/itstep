@@ -1,6 +1,7 @@
 span{
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: #000;
     position: fixed;

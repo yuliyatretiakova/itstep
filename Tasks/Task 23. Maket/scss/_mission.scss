@@ -1,0 +1,37 @@
+.mission-text{
+    padding: 90px 25px;
+    @media (min-width: 768px){
+        padding: 150px 118px;
+    }
+    p{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: $white;
+        @media (min-width: 768px){
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+.mission{
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        background: url("../img/c1.png") no-repeat;
+        background-size: cover;
+        width: 225px;
+        height: 235px;
+        right: 0;
+        top: -100px;
+        z-index: 100;
+        @media (min-width: 1200px){
+            width: 412px;
+            height: 423px;
+            right: 0;
+            top: -170px;
+        }
+    }
+}
