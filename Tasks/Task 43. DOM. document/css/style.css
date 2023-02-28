@@ -1,0 +1,25 @@
+.box .red{
+    color: #f00;
+}
+.chess{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.chess2{
+    width: 800px;
+    height: 800px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.black{
+    width: 100px;
+    height: 100px;
+    background: #000;
+}
+.white{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
