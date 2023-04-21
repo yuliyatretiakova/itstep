@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    font-size: 28px;
+}
+
+.color-red{
+    color: #f00;
+}

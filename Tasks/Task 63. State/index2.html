@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+    function List(){
+        const [items, setItems] = React.useState([]);
+
+        function addItem(){
+            let itemInput = document.getElementById("item");
+            setItems([itemInput.value]);
+            itemInput.value = "";
+        }
+
+        return(
+            <div>
+                <input type="number" name="item" id="item" />
+                <button onClick={addItem}>Добавить пункт</button>
+                <div>
+                    <ul>
+                    {items.map(element => {
+                        return <li>Пункт{element}</li>;
+                    })}    
+                    </ul>    
+                </div>
+            </div>
+        );
+    }
+    ReactDOM.createRoot(
+        document.getElementById("app")
+    )
+    .render(
+        <List />
+    )
+    </script>
+</body>
+</html>

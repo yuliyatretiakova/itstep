@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function Calculator(){
+            const [x, setX] = React.useState(0);
+            const [y, setY] = React.useState(0);
+            const [operation, setOperation] = React.useState("+");
+
+            function handelXChange(event){
+                setX(+event.target.value);
+            }
+
+            function handelYChange(event) {
+                setY(+event.target.value);
+            }
+
+            function handelOperationChange(event) {
+                setOperation(event.target.value);
+            }
+
+            return (
+                <div>
+                    <input type="text" name="x" id="x" onChange={handelXChange}/>
+                    <input type="text" name="y" id="y" onChange={handelYChange} />
+                    <select name="operation" id="operation" value={operation} onChange={handelOperationChange}>
+                        <option value="+">Сумма</option>
+                        <option value="-">Разность</option>
+                        <option value="*">Произведение</option>
+                        <option value="/">Частное</option>
+                    </select>
+                    <div>
+                        {operation == "+" &&
+                            <>Сумма: {x}+{y}={x + y} <br /></>
+                        }
+                        {operation == "-" &&
+                           <>Разность: {x}-{y}={x - y} <br /></> 
+                        }
+                        {operation == "*" &&
+                            <>Произведение: {x}*{y}={x * y} <br /></>
+                        }
+                        {operation =="/" && y == 0 &&
+                            <>Деление на ноль</>
+                        }
+                        {operation == "/" && y != 0 &&
+                            <>Частное: {x}:{y}={x / y} <br /></>
+                        }
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById("app"))
+                .render(
+                    <Calculator />
+                );
+    </script>
+</body>
+</html>

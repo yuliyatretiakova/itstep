@@ -85,6 +85,11 @@ form.addEventListener("submit", function(event){
 
         div.innerHTML += `Хобби: ${hobbyValue.join(",")}<br>`;
         div.innerHTML += `О себе: ${aboutInput.value}<br>`;
+
+        let avatar = avatarInput.value;
+        let row = avatar.split("\\");// "\" - экранирует спецсимволы
+        div.innerHTML += `Аватар: ${row[row.length-1]}<br>`;// название картинки без полного пути
+        div.innerHTML += `Аватар: ${avatarInput.value}<br>`;// полный путь
         this.reset();// очищение формы this == form
     }
     

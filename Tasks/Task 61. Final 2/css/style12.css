@@ -1,0 +1,18 @@
+.form{
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 440px;
+    margin: 0 auto;
+}
+
+.calendar{
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 15px 30px;
+}
+

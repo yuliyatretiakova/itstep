@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        function Form(){
+
+            function change(event){
+                let input1 = document.querySelector("#in1");
+                let input2 = document.querySelector("#in2");
+                let in3 = input1.value;
+                input1.value = input2.value;
+                input2.value = in3;
+            }
+
+            return <div>
+                        <div class="inputs">
+                            <input type="text" id="in1" />
+                            <input type="text" id="in2" />
+                        </div>
+                        <button onClick={change}>Меняем</button>
+                    </div>
+        }
+
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <Form />
+            );
+    </script>
+</body>
+</html>
