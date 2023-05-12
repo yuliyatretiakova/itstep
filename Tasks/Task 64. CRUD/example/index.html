@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="app"></div>
+        
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            
+        function App(){
+            
+            const [book, setBook] = React.useState(
+                {
+                    title: "",
+                    author: "",
+                    genre: "Детектив",
+                    pages: 0
+                }
+            );
+            
+            const [books, setBooks] = React.useState([
+                {
+                    title: "Властелин колец",
+                    author: "Дж. Р. Толкин",
+                    genre: "Фантастика",
+                    pages: 1000
+                }
+            ]);
+
+            const [editIndex, setEditIndex] = React.useState(-1);
+
+            function handleFormSubmit(event){
+                event.preventDefault();
+                if(editIndex == - 1){
+                    setBooks([...books, book]);
+                    setBook({
+                        title: "",
+                        author: "",
+                        genre: "Детектив",
+                        pages: 0
+                    });
+                } else {
+                    books[editIndex] = book;
+                    setBooks([...books]);
+                    setBook({
+                        title: "",
+                        author: "",
+                        genre: "Детектив",
+                        pages: 0
+                    });
+                    setEditIndex(-1);
+                }
+            }
+
+            function handleTitleChange(event){
+                setBook({...book, title: event.target.value});
+            }
+            function handleAuthorChange(event){
+                setBook({ ...book, author: event.target.value });
+            }
+            function handleGenreChange(event) {
+                setBook({ ...book, genre: event.target.value });
+            }
+            function handlePagesChange(event) {
+                setBook({ ...book, pages: event.target.value });
+            }
+            
+            function handleBookDelete(event){
+                let index = +event.target.dataset.id;
+                books.splice(index, 1);
+                setBooks([...books]);
+            }
+
+            function handleBookEdit(event){
+                let index = +event.target.dataset.id; // event.target - кнопка dataset.id - атрибут data-id кнопки
+                // index - номер книги в массиве books
+                let editBook = books[index]; // редактируемая книга, поулченная по номеру элемента в массиве
+                setBook({
+                    title: editBook.title,
+                    author: editBook.author,
+                    genre: editBook.genre,
+                    pages: editBook.pages
+                });
+                setEditIndex(index);
+            }
+
+            return <>
+                <div>
+                    <form action="" onSubmit={handleFormSubmit}>
+                        <div>
+                            <label for="title">Название</label>
+                            <input type="text" value={book.title} name="title" id="title" onChange={handleTitleChange}/>
+                        </div>
+                        <div>
+                            <label for="author">Автор</label>
+                            <textarea name="author" id="author" value={book.author} onChange={handleAuthorChange} />
+                        </div>
+                        <div>
+                            <label for="genre">Жанр</label>
+                            <select name="genre" id="genre" value={book.genre} onChange={handleGenreChange}>
+                                <option value="Фантастика">Фантастика</option>
+                                <option value="Детектив">Детектив</option>
+                                <option value="Приключения">Приключения</option>
+                            </select>    
+                        </div>
+                        <div>
+                            <label for="pages">Количество страниц</label>
+                            <input type="text" name="pages" id="pages" value={book.pages} onChange={handlePagesChange} />
+                        </div>
+                        <div>
+                            <button type="submit">{editIndex > -1 ? <>Сохранить</> : <>Добавить</>}</button>    
+                        </div>    
+                    </form>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Номер</th>
+                            <th>Название</th>
+                            <th>Автор</th>
+                            <th>Жанр</th>
+                            <th>Страницы</th>
+                            <th>Действия</th>
+                        </tr>
+                        {
+                            books.map(function(item, index){
+                                return  <tr>
+                                            <td>{index+1}</td>
+                                            <td>{item.title}</td>
+                                            <td>{item.author}</td>
+                                            <td>{item.genre}</td>
+                                            <td>{item.pages}</td>
+                                            <td>
+                                                <button onClick={handleBookEdit} data-id={index}>Редактировать</button>
+                                                <button onClick={handleBookDelete} data-id={index}>Удалить</button>
+                                            </td>
+                                        </tr>
+                            })
+                        }
+                    </table>
+                </div>
+            </>;
+
+        }
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+        .render(
+            <App />
+        )
+        </script>
+    </body>
+</html>

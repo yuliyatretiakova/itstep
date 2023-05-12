@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        
+        function Game(){
+
+            const badLetter = ["ь", "ъ", "ы", "ё"];
+
+            let [lastLetter, setLastLetter] = React.useState("");
+            let [currentPlayer, setCurrentPlayer] = React.useState(1);
+            const [cityFirstPlayer, setCityFirstPlayer] = React.useState([]);
+            const [citySecondPlayer, setCitySecondPlayer] = React.useState([]);
+            let [city, setCity] = React.useState("");
+
+            function handleCityChange(event){
+                setCity(event.target.value);
+            }
+
+            function addCity(event){
+                let cities = cityFirstPlayer.concat(citySecondPlayer);
+
+                let last = city[city.length - 1];//последняя буква введённого города
+                let currentIndex = city.length - 1;
+                while(badLetter.includes(last)){
+                    currentIndex--;
+                    last = city[currentIndex];
+                }
+
+                let first = city[0].toLowerCase();
+
+                if(lastLetter == ""){
+                    setLastLetter(last);
+                    setCityFirstPlayer([city]);
+                    setCurrentPlayer(2);
+                    setCity("");
+                }else{
+                    if(lastLetter != first)
+                        return false;
+
+                    if(cities.includes(city))
+                        return false;
+
+                    setLastLetter(last);
+
+                    if(currentPlayer == 1){
+                        setCityFirstPlayer([...cityFirstPlayer, city]);
+                        setCurrentPlayer(2);
+                    }else{
+                        setCitySecondPlayer([...citySecondPlayer, city]);
+                        setCurrentPlayer(1);
+                    }
+                    setCity("");
+                }
+            }
+
+            return<>
+                <div class="field">
+                    <input type="text" name="city" id="city" value={city} onChange={handleCityChange}/>
+                    <button class="play" onClick={addCity}>Добавить город</button>
+                </div>
+                <div class="first-player">
+                    <ul class="list-group">
+                       {cityFirstPlayer.map((item) => <li class="list-group-item">{item}</li>)} 
+                    </ul>    
+                </div>
+                <div class="second-player">
+                    <ul class="list-group">
+                        {citySecondPlayer.map((item) => <li class="list-group-item">{item}</li>)}
+                    </ul>    
+                </div>
+            </>
+        }
+        
+        ReactDOM.createRoot(
+                document.getElementById("app")
+            )
+                .render(
+                    <Game />
+                )  
+    </script>
+</body>
+</html>

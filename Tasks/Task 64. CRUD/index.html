@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+
+        function App(){
+            const [book, setBook] = React.useState({//связана с формой 
+                title:"",
+                author:"",
+                genre:"Детектив",
+                pages:"0"
+            });
+
+            const [books, setBooks] = React.useState([{//связана с таблицей
+                title:"Убийство в Восточном экспрессе",
+                author:"Агата Кристи",
+                genre:"Детектив",
+                pages: 450
+            }]);
+
+            function handleFormSubmit(event){
+                event.preventDefault();//блокируем отправку формы
+                setBooks([...books, book]);//вносим в массив books новый объект книгу, используя метод setBooks
+                setBook({// очищаем объект book связанный с формой
+                    title: "",
+                    author: "",
+                    genre: "Детектив",
+                    pages: "0"
+                });
+            }
+
+            function handleTitleChange(event){
+                setBook({...book, title: event.target.value});
+            }
+
+            function handleAuthorChange(event) {
+                setBook({ ...book, author: event.target.value });
+            }
+
+            function handleGenreChange(event) {
+                setBook({ ...book, gener: event.target.value })
+            }
+
+            function handlePagesChange(event) {
+                setBook({ ...book, pages: event.target.value })
+            }
+
+
+            return <>
+                <form action="" onSubmit={handleFormSubmit} className="form">
+                    <div>
+                        <label for="title">Название</label>{/*Коммент*/}
+                        <input type="text" value={book.title} name="title" id="title" onChange={handleTitleChange} /> 
+                    </div>
+                    <div>
+                        <label for="author">Автор</label>
+                        <textarea value={book.author} name="author" id="author" onChange={handleAuthorChange} /> 
+                    </div>
+                    <div>
+                        <label for="genre">Жанр</label>
+                        <select value={book.genre} name="genre" id="genre" onChange={handleGenreChange}>
+                            <option value="Фантастика">Фантастика</option>
+                            <option value="Детектив">Детектив</option>
+                            <option value="Приключения">Приключения</option>
+                        </select> 
+                    </div>
+                    <div>
+                        <label for="pages"></label>
+                        <input type="text" value={book.pages} name="pages" id="pages" onChange={handlePagesChange} /> 
+                    </div>
+                    <div>
+                        <button type="submit">Сохранить</button>
+                    </div>
+                </form>
+                <table>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Название</th>
+                        <th>Автор</th>
+                        <th>Жанр</th>
+                        <th>Количество страниц</th>
+                        <th>Действия</th>
+                    </tr>
+                    {
+                        books.map(function(item, index){
+                            return <tr>
+                                        <td>{index+1}</td>
+                                        <td>{item.title}</td>
+                                        <td>{item.author}</td>
+                                        <td>{item.genre}</td>
+                                        <td>{item.pages}</td>
+                                        <td>
+                                            <button>Редактировать</button>
+                                            <button>Удалить</button>
+                                        </td>
+                                    </tr>
+                        })
+                    }
+                    
+                </table>
+            </>;
+        }
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <App />
+            );
+    </script>
+    
+</body>
+</html>

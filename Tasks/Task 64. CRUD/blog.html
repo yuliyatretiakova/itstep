@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="app"></div>
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+
+            function Blog(){
+
+                const [form, setForm] = React.useState(
+                    {
+                        picture: "",
+                        title: "",
+                        text: ""
+                    }
+                );
+
+                const [article, setArticle] = React.useState([]);
+
+                const [editIndex, setEditIndex] = React.useState(-1);
+
+                function handleFormSubmit(event) {
+                    event.preventDefault();
+
+                    if(editIndex == -1){
+                        setArticle([...article, {
+                            picture: form.picture,
+                            title: form.title,
+                            text: form.text,
+                            date: new Date() 
+                        }]);
+                        setForm({
+                            picture: "",
+                            title: "",
+                            text: ""
+                        });
+                    } else {
+                        article[editIndex] = {
+                          picture: form.picture,
+                            title: form.title,
+                            text: form.text,
+                            date: new Date()  
+                        }
+                        setArticle([...article]);
+                        setForm({
+                            picture: "",
+                            title: "",
+                            text: ""
+                        });
+                        setEditIndex(-1);
+                    }
+                }
+                
+                function handlePictureChange(event){
+                    setForm({...form, picture: event.target.value});
+                }
+
+                function handleTitleChange(event) {
+                    setForm({ ...form, title: event.target.value });
+                }
+
+                function handleTextChange(event) {
+                    setForm({ ...form, text: event.target.value });
+                }
+
+                function handleArticleDelete(event){
+                    let index = +event.target.dataset.id;
+                    article.splice(index, 1);
+                    setArticle([...article]);
+                }
+
+                function handleArticleEdit(event){
+                    let index = +event.target.dataset.id;
+                    let editForm = article[index];
+                    setForm({
+                        picture: editForm.picture,
+                        title: editForm.title,
+                        text: editForm.text
+                        
+                    });
+                    setEditIndex(index);
+                }
+
+                return <>
+                    <div>
+                        <form action="" onSubmit={handleFormSubmit}>
+                            <div>
+                                <label for="picture">Картинка</label>
+                                <input type="text" name="picture" id="picture" value={form.picture} onChange={handlePictureChange}/>
+                            </div>
+                            <div>
+                                <label for="title">Название</label>
+                                <input type="text" name="title" id="title" value={form.title} onChange={handleTitleChange} />
+                            </div>
+                            <div>
+                                <label for="text">Текст</label>
+                                <textarea name="text" id="text" cols="" rows=""
+                                value={form.text} onChange={handleTextChange}></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">{editIndex > -1 ? <>Сохранить</> : <>Добавить</>}</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                               <th>Номер</th>
+                               <th>Картинка</th>
+                               <th>Название</th>
+                               <th>Текст</th>
+                               <th>Дата</th> 
+                            </tr>
+                            {
+                                article.map(function(item, index){
+                                    return <tr>
+                                        <td>{index+1}</td>
+                                        <td><img src={"./picture/"+item.picture} alt=""/></td>
+                                        <td>{item.title}</td>
+                                        <td>{item.text}</td>
+                                        <td>{item.date.toLocaleDateString()}</td>
+                                        <td>
+                                            <button onClick={handleArticleEdit} data-id={index}>Редактировать</button>
+                                            <button onClick={handleArticleDelete} data-id={index}>Удалить</button>
+                                        </td>
+                                    </tr>
+                                })
+                            }
+                        </table>
+                    </div>
+                </>;
+            }
+            ReactDOM.createRoot(
+                    document.getElementById("app")
+                )
+                    .render(
+                        <Blog />
+                    )
+        </script>
+</body>
+</html>

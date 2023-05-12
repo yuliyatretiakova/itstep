@@ -14,33 +14,33 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
        function Compare(){
-        const [x, setX] = React.useState(0);
-        const [y, setY] = React.useState(0);
+            const [x, setX] = React.useState(0);
+            const [y, setY] = React.useState(0);
 
-        function comparison(){
-            let inputX = document.getElementById("x");
-            let inputY = document.getElementById("y");
+            function comparison(){
+                let inputX = document.getElementById("x");
+                let inputY = document.getElementById("y");
 
-            setX(+inputX.value);
-            setY(+inputY.value);
-        }
+                setX(+inputX.value);
+                setY(+inputY.value);
+            }
 
-        return (
-            <div>
-                <input type="text" name="x" id="x" />
-                <input type="text" name="y" id="y" />
-                <button onClick={comparison}>Большее число</button>
+            return (
                 <div>
-                { x > y &&
-                    <span>{x}</span>
-                }
-                {x < y &&
-                    <span>{y}</span>
-                }        
+                    <input type="text" name="x" id="x" />
+                    <input type="text" name="y" id="y" />
+                    <button onClick={comparison}>Большее число</button>
+                    <div>
+                    { x > y &&
+                        <span>{x}</span>
+                    }
+                    {x < y &&
+                        <span>{y}</span>
+                    }        
+                    </div>
                 </div>
-            </div>
-        )
-       }
+            )
+        }
         ReactDOM.createRoot(document.getElementById("app"))
             .render(
                 <Compare />
