@@ -16,3 +16,12 @@ body {
     border:0;
     background-color: #fff;
 }
+.picture{
+    width: 100px;
+}
+.error{
+    color:#f00;
+}
+.errorFrame{
+    border-color: #f00;
+}

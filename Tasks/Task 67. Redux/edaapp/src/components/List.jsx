@@ -22,6 +22,7 @@ const List = (props) => {
         <table className="table">
             <thead>
                 <tr>
+                    <th scope="col">Картинка</th>
                     <th scope="col">#</th>
                     <th scope="col">Название</th>
                     <th scope="col">Цена</th>
@@ -36,6 +37,7 @@ const List = (props) => {
                 {
                     props.products.map((item, index) => {
                         return <tr key={item.id}>
+                            <td><img src={`/img/${item.picture}`} alt={item.name} className="picture"/></td>
                             <td scope="row">{index+1}</td>
                             <td>{item.name}</td>
                             <td>{item.price}</td>
@@ -69,7 +71,7 @@ const List = (props) => {
                     })
                 }
                 <tr>
-                    <td colSpan={6} align="right">Итого:</td>
+                    <td colSpan={7} align="right">Итого:</td>
                     <td align="right">{getResult()}</td>
                     <td></td>
                 </tr>

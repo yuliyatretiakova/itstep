@@ -8,10 +8,12 @@ store.dispatch({
 
     articles: [
         {
-           id: 1,
-           name:"First article",
-           text:"Hi everyone",
-           picture: "Flower frog.jpg" 
+            id: 1,
+            name:"Hi everyone!",
+            text:"I glad to see you all on my page!",
+            picture: "Flower frog.jpg",
+            date: new Date(),
+            like: 0
         }
     ],
 

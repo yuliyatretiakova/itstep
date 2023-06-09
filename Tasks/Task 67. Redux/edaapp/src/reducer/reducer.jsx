@@ -11,6 +11,7 @@ const reducer = (state = {}, action) => {
         case "PRODUCT_ADD":
             let newId = ++state.lastIdProduct;
             let newProduct = {
+                picture: action.product.picture,
                 id: newId,
                 name: action.product.name,
                 price: action.product.price,

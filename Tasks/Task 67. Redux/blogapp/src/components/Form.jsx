@@ -2,10 +2,9 @@ const React = require("react");
 
 const Form = (props) => {
     let [data, setData] = React.useState({
-        id: 0,
         name: "",
         text: "",
-        picture:"Flower frog.jpg"
+        picture:""
     })
 
     function handleFormSubmit (event){
@@ -14,7 +13,7 @@ const Form = (props) => {
         setData({
             name: "",
             text: "",
-            picture: "Flower frog.jpg"
+            picture: ""
         });
     }
 
@@ -30,27 +29,22 @@ const Form = (props) => {
         setData({ ...data, picture: event.target.value })
     }
 
-    function handleIdChange(event){
-        setData({...data, id: event.target.value})
-    }
-
     return (<>
-        <form class="blog_form" action="" onSubmit={handleFormSubmit}>
-            <div class="mb-3">
-                <label for="name" class="form-label">Название</label>
-                <input type="text" class="form-control" id="name" value={data.name} onChange={handleNameChange} />
+        <form className="blog_form" action="" onSubmit={handleFormSubmit}>
+            <div className="mb-3">
+                <label htmlFor="name" className="form-label">Название</label>
+                <input type="text" className="form-control" id="name" value={data.name} onChange={handleNameChange} />
             </div>
-            <div class="mb-3">
-                <label for="text" class="form-label">Текст</label>
-                <textarea class="form-control" id="text" rows="3" value={data.text} onChange={handleTextChange} />
+            <div className="mb-3">
+                <label htmlFor="text" className="form-label">Текст</label>
+                <textarea className="form-control" id="text" rows="3" value={data.text} onChange={handleTextChange} />
             </div>
-            <div class="mb-3">
-                <label for="image" class="form-label">Картинка</label>
-                <input type="text" class="form-control" id="image" value={data.picture} onChange={handlePictureChange} />
+            <div className="mb-3">
+                <label htmlFor="image" className="form-label">Картинка</label>
+                <input type="text" className="form-control" id="image" value={data.picture} onChange={handlePictureChange} />
             </div>
-            <div class="mb-3">
-                <input type="hidden" id="id" value={data.id} onChange={handleIdChange} />
-                <button type="submit" class="btn btn-primary">Добавить</button>
+            <div className="mb-3">
+                <button type="submit" className="btn btn-primary">Добавить</button>
             </div>
         </form>
     </>)

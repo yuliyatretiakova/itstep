@@ -6,8 +6,8 @@ const Blog = require("./Blog.jsx");
 
 const AppView = (props) => {
     return <>
-        <Form/>
-        <Blog/>
+        <Form onArticleAdd={props.addArticle}/>
+        <Blog articles={props.articles} onArticleDelete={props.deleteArticle} onArticleLike={props.likeArticle} />
     </>
 };
 

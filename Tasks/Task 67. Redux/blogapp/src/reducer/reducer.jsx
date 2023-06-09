@@ -13,7 +13,9 @@ const reducer = (state = {}, action) => {
                 id: newId,
                 name: action.article.name,
                 text: action.article.text,
-                picture: action.article.picture
+                picture: action.article.picture,
+                date: new Date(),
+                like: 0
             };
             return {
                 ...state,
@@ -24,6 +26,16 @@ const reducer = (state = {}, action) => {
             return {
                 ...state,
                 articles: state.articles.filter((item) => item.id != action.articleId)
+            }
+        case "ARTICLE_LIKE":
+            return {
+                ...state,
+                articles: state.articles.map((item) => {
+                    if(item.id == action.id){
+                        item.like++;
+                    }
+                    return item;
+                })
             }
 
     }

@@ -8,14 +8,17 @@ store.dispatch({
 
     products:[
         {
+            picture:"milk.webp",
             id: 1,
-            name: "Milk",
+            name: "Молоко",
             price: 5,
             quantity: 7,
             favorite: false,
             unit: "л"
         }
     ],
+
+    
 
     user: {
         name: "Вася Пупкин",
