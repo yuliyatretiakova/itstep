@@ -13,7 +13,7 @@ const UserInfo = (props) => { //props.user
 
 const mapStateToProps = state => {
     return {
-        user: state.product.user
+        user: state.product.user //product -  название reducer, описанного в /reducer/index.jsx
     }
 };
 

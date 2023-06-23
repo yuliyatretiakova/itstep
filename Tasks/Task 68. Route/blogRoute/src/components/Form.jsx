@@ -17,6 +17,7 @@ const Form = (props) => {
             text: "",
             picture: ""
         });
+        props.history.push("/blog")
     }
 
     function handleNameChange(event) {

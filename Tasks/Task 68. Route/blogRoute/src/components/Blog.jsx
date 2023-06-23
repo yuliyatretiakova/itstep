@@ -12,6 +12,10 @@ const Blog = (props) => {
     function handleLikeClick(event) {
         props.onArticleLike(+event.currentTarget.dataset.id);
     }
+    function numberOfComments (postId) {
+        let number = props.comments.filter((item) => item.postId == postId).length;
+        return number;
+    }
 
     return <>
         <div className="blog_posts">
@@ -31,6 +35,9 @@ const Blog = (props) => {
                         </button>
                         <span>{item.like}</span>
                         <button type="button" className="btn btn-danger" data-id={item.id} onClick={handleDeleteClick}>Удалить</button>
+                        <span>{numberOfComments(item.id)} комментариев</span>
+                        <button type="button" className="btn btn-info" onClick={() => { props.history.push("/blog/"+item.id)}}>Подробнее</button>
+                        <button type="button" className="btn btn-info" onClick={() => { props.history.push("/edit/" + item.id) }}>Редактировать</button>
                     </div>
                 </div>
             })}
@@ -40,7 +47,8 @@ const Blog = (props) => {
 
 const mapStateToProps = state => {
     return{
-        articles: state.blog.articles //blog - редюсер
+        articles: state.blog.articles, //blog - редюсер
+        comments: state.blog.comments
     }
 };
 
@@ -55,7 +63,7 @@ const mapDispatchToProps = dispatch => ({
         dispatch({
             type: LIKE_ARTICLE, id
         })
-    },
+    }
 })
 
 module.exports = connect(mapStateToProps, mapDispatchToProps)(Blog);

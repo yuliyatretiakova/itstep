@@ -7,7 +7,9 @@ const reducer = (state = {}, action) => {
             return {...state,
                 products: action.products,
                 user: action.user,
-                lastIdProduct: action.lastIdProduct
+                reviews: action.reviews,
+                lastIdProduct: action.lastIdProduct,
+                lastIdReview: action.lastIdReview
             }
         case "PRODUСT_ADD":
             let newId = ++state.lastIdProduct;
@@ -47,6 +49,16 @@ const reducer = (state = {}, action) => {
             }
         }
         case "PRODUСT_EDIT":
+            return {...state,
+                products: state.products.map((item) => {
+                    if(item.id == action.id){
+                        item.name = action.product.name;
+                        item.price = action.product.price;
+                        item.quantity = action.product.quantity;
+                    }
+                    return item;
+                })
+            }
             break;
             
     }

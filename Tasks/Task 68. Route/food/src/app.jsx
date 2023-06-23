@@ -7,14 +7,13 @@ const {ConnectedRouter} = require("connected-react-router"); // 4 строка �
 const {store, history} = require("./store.jsx");
 const {Route, Switch} = require("react-router");
 
+
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            <>
-                <Switch>
-                    <Route path="/" component={AppView}/>
-                </Switch>            
-            </>
+            <Switch>
+                <Route path="/" component={AppView}/>
+            </Switch>            
         </ConnectedRouter>
     </Provider>,
     document.getElementById("app") 

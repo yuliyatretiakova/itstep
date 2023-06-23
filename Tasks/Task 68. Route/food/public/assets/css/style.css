@@ -10,7 +10,7 @@ body{
 .blog_posts{
     margin-top: 50px;
 }
-.button_trash, .button_favorite, .button_unfavorite{
+.button_trash, .button_favorite, .button_unfavorite, .button_view, .button_edit{
     cursor: pointer;
     border: 0;
     background-color: #fff;

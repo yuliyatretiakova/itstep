@@ -5,7 +5,9 @@ const reducer = (state = {}, action) => {
             return {
                 ...state,
                 articles: action.articles,
-                lastArticleId: action.lastArticleId
+                comments: action.comments,
+                lastArticleId: action.lastArticleId,
+                lastCommentId: action.lastCommentId
             }
         case "ARTICLE_ADD":
             let newId = ++state.lastArticleId;
@@ -37,6 +39,31 @@ const reducer = (state = {}, action) => {
                     return item;
                 })
             }
+        case "ARTICLE_EDIT":
+            return {
+                ...state,
+                articles: state.articles.map((item) => {
+                    if (item.id == action.id) {
+                        item.name = action.article.name;
+                        item.text = action.article.text;
+                        item.picture = action.article.picture;
+                    }
+                    return item;
+                })
+            }
+        case "ARTICLE_COMMENT":
+            let newCommentId = ++state.lastCommentId;
+            let newComment = {
+                id: newCommentId,
+                postId: action.comment.postId,
+                author: action.comment.author,
+                text: action.comment.text
+            };
+            return {
+                ...state,
+                comments: [...state.comments, newComment],
+                lastCommentId: newCommentId
+            };
 
     }
     return state;

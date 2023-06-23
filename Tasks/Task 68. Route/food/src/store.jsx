@@ -31,7 +31,7 @@ const store = redux.createStore(reducer(history), {},
             routerMiddleware(history)
         )
     )
-    );
+);
 
 store.dispatch({
     type: "INIT",
@@ -48,7 +48,22 @@ store.dispatch({
             favorite: false
         }
     ],
-    lastIdProduct: 1
+    reviews: [
+        {
+            id: 1,
+            productId: 1,
+            author: "Вася пупкин",
+            text: "Работает на ура"
+        },
+        {
+            id: 2,
+            productId: 1,
+            author: "Вася пупкин",
+            text: "Не усваивается"
+        },
+    ],
+    lastIdProduct: 1,
+    lastIdReview: 2
 });
 
 module.exports = {store, history};

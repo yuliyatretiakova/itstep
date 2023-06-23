@@ -20,7 +20,7 @@ const FormAdd = (props) => {
             quantity: 0,
             favorite: false 
         });
-        
+        props.history.push("/product/") //редирект
     }
 
     function handleNameChange(event){
@@ -68,9 +68,7 @@ const FormAdd = (props) => {
 }
 
 const mapStateToProps = state => {
-    return {
-        user: state.product.user
-    }
+    return {}
 };
 
 const mapDispatchToProps = dispatch => ({

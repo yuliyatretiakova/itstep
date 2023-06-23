@@ -30,7 +30,23 @@ store.dispatch({
         }
     ],
 
-    lastArticleId: 1
+    comments: [
+        {
+            id: 1,
+            postId: 1,
+            author: "Вася Пупкин",
+            text: "So do I"
+        },
+        {
+            id: 2,
+            postId: 1,
+            author: "Саша Никитин",
+            text: "add entity"
+        }
+    ],
+
+    lastArticleId: 1,
+    lastCommentId: 2
 });
 
 module.exports = {store, history};
