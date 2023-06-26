@@ -1,6 +1,7 @@
 const React = require("react");
 const connect = require("react-redux").connect;
 const { DELETE_ARTICLE, LIKE_ARTICLE, COMMENT_ARTICLE} = require("../actions/actions.jsx");
+const CommentOutput = require("./CommentOutput.jsx");
 
 const Post = (props) => {
 
@@ -62,15 +63,7 @@ const Post = (props) => {
                         <span>{post.like}</span>
                         <button type="button" className="btn btn-danger" data-id={post.id} onClick={handleDeleteClick}>Удалить</button>
                     </div>
-                    <div>
-                        <h4>Комментарии:</h4>
-                        {postComments.map((item) => {
-                            return <div key={item.id}>
-                            <h5>{item.author}</h5>
-                            <p>{item.text}</p>
-                            </div>
-                        })}
-                    </div>
+                    <CommentOutput id={post.id}/>
                     <form className="blog_form" action="" onSubmit={handleFormSubmit}>
                         <div className="mb-3">
                             <label htmlFor="author" className="form-label">Автор</label>
