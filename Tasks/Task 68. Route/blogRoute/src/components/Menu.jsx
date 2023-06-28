@@ -5,17 +5,21 @@ const {push} = require("connected-react-router");
 const Menu = (props) => {
 
     return <>
-        <ul className="nav navbar-nav">
-            <li className="nav-item" onClick={() => { props.push("/") }}>
-                Главная
-            </li>
-            <li className="nav-item" onClick={() => { props.push("/form") }}>
-                Форма
-            </li>
-            <li className="nav-item" onClick={() => { props.push("/blog") }}>
-                Блог
-            </li>
-        </ul>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <ul className="navbar-nav">
+                    <li className="nav-item" onClick={() => { props.push("/") }}>
+                        Главная
+                    </li>
+                    <li className="nav-item" onClick={() => { props.push("/form") }}>
+                        Форма
+                    </li>
+                    <li className="nav-item" onClick={() => { props.push("/blog") }}>
+                        Блог
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </>;
 }
 

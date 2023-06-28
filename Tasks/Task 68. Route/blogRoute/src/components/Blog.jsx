@@ -27,17 +27,31 @@ const Blog = (props) => {
                         <p className="card-text">{item.text} </p>
                         <time>{item.date.toLocaleDateString()}</time>
                     </div>
-                    <div className="card-footer text-body-secondary">
-                        <button className="button_like" data-id={item.id} onClick={handleLikeClick} >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" className="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                            </svg>
-                        </button>
-                        <span>{item.like}</span>
-                        <button type="button" className="btn btn-danger" data-id={item.id} onClick={handleDeleteClick}>Удалить</button>
-                        <span>{numberOfComments(item.id)} комментариев</span>
-                        <button type="button" className="btn btn-info" onClick={() => { props.history.push("/blog/"+item.id)}}>Подробнее</button>
-                        <button type="button" className="btn btn-info" onClick={() => { props.history.push("/edit/" + item.id) }}>Редактировать</button>
+                    <div className="card-footer text-body-secondary card_footer-style">
+                        <div className="card_footer-style_like">
+                            <div className="card-footer-style_like__button">
+                                <button className="button_like" data-id={item.id} onClick={handleLikeClick} >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fillRule="currentColor" className="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fillRule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div className="card-footer_like__count">
+                                <div>{item.like}</div>
+                            </div>
+                        </div>
+                        <div className="card_footer-style_comments">
+                            <div>{numberOfComments(item.id)} комментариев</div>
+                        </div>
+                        <div className="card_footer-style_more">
+                            <button type="button" className="btn btn-info" onClick={() => { props.history.push("/blog/" + item.id) }}>Подробнее</button>
+                        </div>
+                        <div className="card_footer-style_edit">
+                            <button type="button" className="btn btn-secondary" onClick={() => { props.history.push("/edit/" + item.id) }}>Редактировать</button>
+                        </div>
+                        <div className="card_footer-style_delete">
+                            <button type="button" className="btn btn-danger" data-id={item.id} onClick={handleDeleteClick}>Удалить</button>
+                        </div>   
                     </div>
                 </div>
             })}
