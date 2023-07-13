@@ -1,0 +1,14 @@
+.map{
+    width: 100%;
+    height: 800px;
+    background-color: $bginput;
+    margin-bottom: 64px;
+}
+
+[class*="copyrights-pane"]{
+    display: none !important;
+}
+
+[class*="ground-pane"]{
+    filter: grayscale(1);
+}

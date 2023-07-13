@@ -1,0 +1,75 @@
+@import "../include/color";
+.authors {
+    .author {
+        border: 1px solid #E5E5E5;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .name {
+            font-family: 'Open Sans';
+            font-style: normal;
+            line-height: 27px;
+            order: 1;
+            h3 {
+                font-weight: 400;
+                font-size: 20px;
+                color: #002945;
+            }
+        }
+        .address {
+            font-family: 'Montserrat';
+            font-style: normal;
+            line-height: 22px;
+            order: 2;
+            span {
+                color: #292929;
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+        .info {
+            font-family: 'Montserrat';
+            font-style: normal;
+            line-height: 22px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 80%;
+            order: 3;
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                color: #292929;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .authors {
+        .author {
+            .info {
+                width: 100%;
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .authors {
+        .author {
+            .address {
+                order: 3;
+            }
+            .info {
+                order: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import "../include/color";
+.journal-list {
+    .elem {
+        background: $journal-list-background-color;
+        display: flex;
+        padding: 30px 5% 30px 5%;
+        height: 394px;
+        margin-bottom: 25px;
+        .photo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding-right: 40px;
+            img {
+                height: 100%;
+            }
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: $journal-list-detail-background-color;
+            height: 100%;
+            padding: 35px;
+            h2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: $journal-list-h2-text-color;
+            }
+            .delimetr {
+                width: 100px;
+                border-top: 3px solid $journal-list-delimetr;
+            }
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 19px;
+            }
+            .more {
+                a {
+                    text-decoration: none !important;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    padding: 10px 30px 10px 30px;
+                    color: $journal-list-a-coolor;
+                    border: 1px solid $journal-list-a-border-coolor;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .journal-list {
+        .elem {
+            height: 490px;
+            .photo {
+                width: 200px;
+                img {
+                    height: 200px;
+                }
+                padding-bottom: 200px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .journal-list {
+        .container {
+            padding: 0px !important;
+        }
+        .elem {
+            height: 670px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            .photo {
+                padding-bottom: 20px;
+                padding-right: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

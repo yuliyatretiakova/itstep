@@ -1,0 +1,116 @@
+// header
+@import "../include/color";
+.header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    a {
+        color: $header-text-color;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 0px;
+        li {
+            list-style-type: none;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            height: 40px;
+        }
+    }
+    .toggle-menu {
+        display: none;
+    }
+    .menu {
+        ul {
+            li {
+                display: flex;
+                a {
+                    line-height: 1;
+                    text-decoration: none;
+                    color: $text-color;
+                    cursor: pointer;
+                    position: relative;
+                    &:after {
+                        display: block;
+                        content: "";
+                        background-color: $sqare-color;
+                        height: 3px;
+                        width: 0%;
+                        margin-top: 38px;
+                        position: absolute;
+                    }
+                    &:hover:after,
+                    &:focus:after {
+                        width: 100%;
+                    }
+                    &.active:after {
+                        display: block;
+                        content: "";
+                        background-color: $sqare-color;
+                        height: 3px;
+                        width: 100%;
+                        margin-top: 38px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+    .menu-entry {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .signin {
+            display: flex;
+            align-items: center;
+            border: 1px solid $signin-sqare-color;
+            border-radius: 2px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-left: 40px;
+            height: 100%;
+        }
+    }
+    .lang-switcher {
+        ul {
+            justify-content: flex-end;
+            .delimetr {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .menu {
+            display: none;
+        }
+        .menu-entry {
+            .signin {
+                margin-left: 0px !important;
+            }
+            .registration {
+                display: none;
+            }
+        }
+        .toggle-menu {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}

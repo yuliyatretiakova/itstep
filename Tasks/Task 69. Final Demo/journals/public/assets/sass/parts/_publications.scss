@@ -1,0 +1,104 @@
+@import "../include/color";
+.publications {
+    .publication-page {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-style: normal;
+        width: 350px;
+        height: 430px;
+        border: 1px solid $publications-border-color;
+        span {
+            font-size: 15px;
+            color: $publications-text-color;
+        }
+        .head-publication {
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .journal {
+                width: 100%;
+                background: $publications-head-background-color;
+                border-right: 2px solid $publications-delimetr-color;
+                padding: 0px 25px 0px 25px;
+                line-height: 17px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                    font-size: 14px;
+                }
+            }
+            .date-time {
+                width: 135px;
+                background: $publications-head-background-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 19px;
+            }
+        }
+        .body-publication {
+            border-top: 1px solid $publications-border-color;
+            border-bottom: 1px solid $publications-border-color;
+            padding: 25px;
+            height: 290px;
+            line-height: 19px;
+            h2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                padding-bottom: 50px;
+                color: $publications-text-color
+            }
+            span {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-size: 14px;
+            }
+        }
+        a {
+            text-decoration: none;
+            .details {
+                padding: 25px;
+                line-height: 23px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    color: $publications-next-color;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .col-auto {
+        padding-bottom: 70px;
+    }
+}
+
+@media(max-width: 768px) {
+    .publications {
+        .row {
+            justify-content: center !important;
+        }
+        .publication-page {
+            width: 100% !important;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .publications {
+        .publication-page {
+            width: 330px;
+        }
+        .col-auto {
+            padding-bottom: 20px !important;
+        }
+    }
+}

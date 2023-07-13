@@ -1,0 +1,81 @@
+@import "../include/link";
+@import "../include/input_custom";
+@import "../include/btn_custom";
+.banner-journal {
+    font-family: 'Montserrat';
+    font-style: normal;
+    height: 344px;
+    background-image: url($banner-journal-background-image-path);
+    background-position: center center;
+    .title {
+        line-height: 34px;
+        h1 {
+            font-weight: 400;
+            font-size: 28px;
+            padding-top: 85px;
+            padding-bottom: 85px;
+        }
+    }
+    .search {
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .edit {
+                position: relative;
+                input {
+                    background: transparent;
+                }
+                .input-search {
+                    border: 1px solid $input-border-color;
+                    width: 320px;
+                    height: 35px;
+                    &:focus+.search-img {
+                        display: none;
+                    }
+                    &:valid+.search-img {
+                        display: none;
+                    }
+                }
+                .search-img {
+                    position: absolute;
+                    bottom: 2px;
+                    padding: 4px;
+                    padding-left: 10px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .btn-search {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 400;
+                font-size: 14px;
+                margin-left: 10px;
+                height: 35px;
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .banner-journal {
+        background-position: 30% 50%;
+        .title {
+            h1 {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .banner-journal {
+        .input-search {
+            width: 250px !important;
+        }
+    }
+}

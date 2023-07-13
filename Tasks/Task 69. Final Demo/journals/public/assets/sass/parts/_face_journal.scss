@@ -1,0 +1,416 @@
+@import "../include/color";
+.face-journal {
+    font-family: 'Montserrat';
+    font-style: normal;
+    padding-top: 35px;
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .left-info {
+            margin-top: 190px;
+            border: 1px solid #E4E4E4;
+            background: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .tab {
+                padding-left: 24px;
+                padding-right: 24px;
+                width: 33%;
+                .head-tab {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    height: 80px;
+                    padding-left: 10px;
+                    img {
+                        margin-right: 10px;
+                    }
+                    line-height: 20px;
+                    span {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #292929;
+                    }
+                }
+                .text-tab {
+                    line-height: 17px;
+                    border-top: 1px solid #E4E4E4;
+                    border-bottom: 1px solid #E4E4E4;
+                    height: 230px;
+                    p {
+                        padding-top: 24px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #292929;
+                    }
+                }
+                .details-tab {
+                    line-height: 18px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    a {
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #292929;
+                        img {
+                            margin-left: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        .right-info {
+            margin-left: 30px;
+            .content {
+                width: 280px;
+                height: 100%;
+                background: #FFFFFF;
+                border: 1px solid #E4E4E4;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .tab-image-journal {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 25px;
+                    .tab-image-journal-background {
+                        background: rgba(241, 241, 241, 0.5);
+                        border: 1px solid #E4E4E4;
+                        padding: 5px;
+                        img {
+                            height: 220px;
+                        }
+                    }
+                }
+                .tab-button {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height: 20px;
+                    .dropdown {
+                        &.edition {
+                            line-height: 22px;
+                            .dropdown-btn {
+                                background: white;
+                                color: #292929;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .show {
+                                img {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                            ul {
+                                padding-left: 30px;
+                                padding-right: 30px;
+                                width: 100%;
+                                line-height: 22px;
+                                min-width: 25px;
+                                margin-top: 5px !important;
+                                border: 1px solid rgba(241, 241, 241, 0.5);
+                                border-radius: 2px;
+                                li {
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    color: #292929;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    &:hover {
+                                        cursor: pointer;
+                                        background: rgba(196, 196, 196, 0.3);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        border-top: 1px solid #EDEDED;
+                        display: flex;
+                        align-items: center;
+                        height: 65px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #292929;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .face-journal {
+        .info {
+            position: relative;
+            .left-info {
+                margin-top: 340px;
+                background-color: transparent;
+                border: none;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .tab {
+                    border: 1px solid #E8E8E8;
+                    width: 48%;
+                    &.journal {
+                        margin-right: 50%;
+                        margin-bottom: 45px;
+                    }
+                }
+            }
+            .right-info {
+                margin-left: 0px;
+                position: absolute;
+                top: 100px;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .face-journal {
+        .info {
+            flex-direction: column-reverse;
+            .left-info {
+                margin-top: 45px;
+                .tab {
+                    width: 100%;
+                    &.journal {
+                        margin-right: 0px;
+                    }
+                    &.editor {
+                        margin-bottom: 45px;
+                    }
+                    &.review {}
+                    .text-tab {
+                        height: 180px;
+                    }
+                }
+            }
+            .right-info {
+                width: 100%;
+                position: relative;
+                display: flex;
+                margin-top: 240px;
+                top: 0px;
+                margin-left: 0px;
+                align-items: center;
+                justify-content: center;
+                .content {
+                    width: 280px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+// .face-journal {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     height: 570px;
+//     a {
+//         text-decoration: none;
+//         color: $journal-text-color;
+//     }
+//     .left-page {
+//         display: flex;
+//         justify-content: start;
+//         align-items: flex-start;
+//         position: relative;
+//         .name-journal {
+//             height: 300px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             h1 {
+//                 font-size: 28px;
+//                 line-height: 34px;
+//                 font-weight: 400;
+//                 font-style: normal;
+//                 color: $journal-text-color;
+//             }
+//         }
+//         .left-info-journal {
+//             margin-top: 220px;
+//             height: 300px;
+//             width: 100%;
+//             position: absolute;
+//             background-color: white;
+//             font-weight: 400;
+//             font-size: 16px;
+//             line-height: 20px;
+//             padding: 5px;
+//             border: 2px solid $journal-border-color-face-tab;
+//             .tab {
+//                 padding: 5px !important;
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: space-between;
+//                 height: 287px;
+//                 .head-tab {
+//                     display: flex;
+//                     align-items: center;
+//                     padding: 5px;
+//                     border-bottom: 2px solid $journal-border-color-face-tab;
+//                     img {
+//                         height: 20px;
+//                         margin: 10px;
+//                     }
+//                     span {
+//                         color: $journal-text-color;
+//                     }
+//                 }
+//                 .text-tab {
+//                     height: 100%;
+//                     padding: 10px;
+//                     p {
+//                         margin: 0;
+//                         font-weight: 400;
+//                         font-size: 14px;
+//                         line-height: 17px;
+//                         color: $journal-text-color;
+//                     }
+//                 }
+//                 .details-tab {
+//                     border-top: 2px solid $journal-border-color-face-tab;
+//                     padding: 10px;
+//                     text-align: right;
+//                     display: flex;
+//                     flex-direction: column;
+//                     justify-content: end;
+//                     img {
+//                         height: 15px;
+//                         margin-left: 10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .right-info-journal-block {
+//         display: flex;
+//         justify-content: flex-end;
+//         .right-info-journal {
+//             width: 90%;
+//             font-size: 16px;
+//             margin-top: 20px;
+//             border: 2px solid $journal-border-color;
+//             background-color: white;
+//             height: 500px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: space-between;
+//             .tab-image-journal {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 height: 100%;
+//                 .border {
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     background-color: $journal-border-color-face;
+//                     img {
+//                         padding: 10px;
+//                         width: 160px;
+//                         height: 100%;
+//                     }
+//                 }
+//             }
+//             .tab-button {
+//                 width: 100%;
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 align-items: flex-end;
+//                 a {
+//                     padding: 20px;
+//                     width: 100%;
+//                     border-top: 1px solid $journal-border-color;
+//                 }
+//             }
+//         }
+//     }
+//     .background-1 {
+//         background-image: url(../img/journals/jour1-bg.png);
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         width: 100%;
+//         height: 300px;
+//     }
+//     .background-2 {
+//         background-image: url(../img/journals/jour2-bg.png);
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         width: 100%;
+//         height: 300px;
+//     }
+//     .background-3 {
+//         background-image: url(../img/journals/jour3-bg.png);
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         width: 100%;
+//         height: 300px;
+//     }
+//     .background-4 {
+//         background-image: url(../img/journals/jour4-bg.png);
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         width: 100%;
+//         height: 300px;
+//     }
+// }
+// @media screen and (max-width: 1000px) {
+//     .right-info-journal-block {
+//         display: none !important;
+//     }
+//     .name-journal {
+//         width: 100% !important;
+//         text-align: center;
+//     }
+// }
+// @media screen and (max-width: 800px) {
+//     .face-journal {
+//         height: 860px;
+//         .page-left-margin {
+//             margin: 20px !important;
+//         }
+//     }
+//     .left-info-journal {
+//         height: 100% !important;
+//         border: 0px solid !important;
+//         padding: 0px !important;
+//         background-color: white !important;
+//         .tab-head {
+//             padding: 0px !important;
+//             background-color: white !important;
+//         }
+//         .tab {
+//             height: 100% !important;
+//             padding: 5px !important;
+//         }
+//         .tab-head {
+//             height: 100% !important;
+//             border: 2px solid $journal-border-color-face-tab !important;
+//         }
+//         .text-tab {
+//             p {
+//                 display: inline-block;
+//             }
+//             background-color: white !important;
+//         }
+//     }
+// }

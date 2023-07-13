@@ -1,0 +1,42 @@
+@import "../include/color";
+.archive-list {
+    .elem {
+        margin-bottom: 50px;
+        border: 1px solid $archive-list-border-color;
+        .picture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            .content {
+                padding: 10px;
+                border: 1px solid $archive-list-border-color;
+                background-color: $archive-list-background-color;
+                img {
+                    width: 160px;
+                    height: 220px;
+                }
+            }
+        }
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 2px solid $archive-list-border-color;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 20px;
+            a {
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                margin: 0px;
+                color: $archive-list-text-color;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {}

@@ -1,0 +1,116 @@
+@import "../include/color";
+@import "../include/btn_custom";
+@import "../include/input_custom";
+.navigation-journal {
+    border-top: 1px solid $line-delimetr-color;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    .row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            margin-bottom: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0px !important;
+            li {
+                display: flex;
+                a {
+                    line-height: 1;
+                    text-decoration: none;
+                    color: $text-color;
+                    cursor: pointer;
+                    position: relative;
+                    &:after {
+                        display: block;
+                        content: "";
+                        background-color: $sqare-color;
+                        height: 3px;
+                        width: 0%;
+                        margin-top: 26px;
+                        position: absolute;
+                    }
+                    &:hover:after,
+                    &:focus:after {
+                        width: 100%;
+                    }
+                    &.active:after {
+                        display: block;
+                        content: "";
+                        background-color: $sqare-color;
+                        height: 3px;
+                        width: 100%;
+                        margin-top: 26px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+    .menu-right {
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            .edit {
+                position: relative;
+                .input-search {
+                    width: 200px;
+                    flex-grow: 5;
+                    height: 35px;
+                    padding: 10px;
+                    &:focus+.search-img {
+                        display: none;
+                    }
+                    &:valid+.search-img {
+                        display: none;
+                    }
+                }
+                .search-img {
+                    position: absolute;
+                    bottom: 2px;
+                    padding: 5px;
+                    padding-left: 10px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .btn-search {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                height: 35px;
+                max-width: 150px;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navigation-journal {
+        .menu-right {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-journal {
+        display: none;
+    }
+}

@@ -1,0 +1,116 @@
+@import "../include/color";
+.publications-download-full {
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 27px;
+    h1 {
+        font-weight: 400;
+        font-size: 22px;
+        color: #292929;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 31px;
+    }
+    .publication-page {
+        font-weight: 400;
+        color: $publications-download-text-color;
+        border: 1px solid $publications-download-border-color;
+        margin-bottom: 35px;
+        .publication-body {
+            padding: 20px 30px 20px 30px;
+            .journal {
+                line-height: 20px;
+                padding-bottom: 25px;
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+            .title {
+                line-height: 22px;
+                h2 {
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+            .autors {
+                font-family: 'Open Sans';
+                font-style: normal;
+                line-height: 20px;
+                padding-top: 30px;
+                span {
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+        .publication-footer {
+            display: flex;
+            flex-direction: row;
+            line-height: 21px;
+            height: 70px;
+            .date-time {
+                padding-left: 30px;
+                border-top: 1px solid $publications-download-border-color;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                span {
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                flex-grow: 1;
+            }
+            .download {
+                border-top: 1px solid $publications-download-border-color;
+                border-left: 1px solid $publications-download-border-color;
+                color: $publications-download-bold-text-color;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    color: $publications-download-text-color;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    span {
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                }
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .publications-download-full {
+        .publication-page {
+            .publication-footer {
+                .date-time {
+                    padding-left: 0px;
+                    justify-content: center;
+                    span {
+                        font-size: 17px;
+                    }
+                }
+                .download {
+                    a {
+                        padding: 10px;
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

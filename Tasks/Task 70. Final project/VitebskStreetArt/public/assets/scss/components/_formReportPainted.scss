@@ -1,0 +1,120 @@
+.formReportPainted_container {
+    width: 700px;
+    border-radius: 20px;
+    background-color: $white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.formReportPainted_close{
+    position: absolute;
+    top: 5px;
+    left: 715px;
+    
+    >.close{
+        width: 48px;
+        height: 48px;
+        background-image: url(../img/main/tags/close-btn-green.png);
+        border: none;
+
+        &:hover{
+            cursor: pointer;
+            background-image: url(../img/main/tags/close-btn-white.png);
+        }
+    }
+}
+
+.formReportPainted_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0px;
+
+    >img{
+        width: 67px;
+        height: 72px;
+    }
+
+    >h1 {
+        width: 138px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: $turquoise;
+        margin-block-start: 0px;
+    }
+}
+
+.formReportPainted_form{
+    margin-bottom: 16px;
+}
+
+.form-row {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: $bginput;
+    border: 0px solid $white;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg1;
+    }
+}
+
+input[type=file] {
+    display: none;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 168px;
+    background-color: $white;
+    border: 1px dashed $bginput;
+    border-radius: 5px;
+    cursor: pointer;
+
+    >span {
+        font-size: 20px;
+        font-weight: 400;
+        color: $formLetters;
+    }
+
+    &:hover {
+        background-color: $bg1;
+    }
+}
+
+.form-row_button {
+    display: flex;
+    justify-content: center;
+}
+
+.button_send {
+    font-size: 20px;
+    font-weight: 400;
+    color: $black;
+    background-color: $white;
+    border: 0px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: 4px solid $turquoise;
+    }
+}

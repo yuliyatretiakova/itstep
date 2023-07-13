@@ -1,0 +1,81 @@
+@import "../include/color";
+.pagination {
+    font-family: 'Open Sans';
+    font-style: normal;
+    .panel {
+        background: $pagination-background-color;
+        height: 67px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .panel-button {
+        display: none;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: $pagination-background-color;
+        padding: 0px;
+        margin: 0px;
+        li {
+            list-style-type: none;
+            line-height: 22px;
+            padding-left: 5px;
+            padding-right: 5px;
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                color: $pagination-text-color !important;
+                border: 0px;
+                border-radius: 0px;
+                background: $pagination-background-color !important;
+            }
+            &.active {
+                a {
+                    font-weight: 700 !important;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .pagination {
+        ul {
+            li {
+                padding-left: 0px;
+                padding-right: 0px;
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 780px) {
+    .pagination {
+        .panel {
+            display: none;
+        }
+        .panel-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            button {
+                color: white;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                width: 163px;
+                height: 46px;
+            }
+        }
+    }
+}

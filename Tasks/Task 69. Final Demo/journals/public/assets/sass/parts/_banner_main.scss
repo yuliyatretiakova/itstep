@@ -1,0 +1,115 @@
+    @import "../include/link";
+    @import "../include/input_custom";
+    @import "../include/btn_custom";
+    .banner-main {
+        height: 546px;
+        background-image: url($banner-main-background-image-path);
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        &.no-search {
+            height: 340px;
+            .title {
+                padding-bottom: 0px;
+            }
+        }
+        .logo {
+            padding-bottom: 50px;
+        }
+        .title {
+            font-family: 'Times New Roman';
+            font-style: normal;
+            line-height: 32px;
+            h1 {
+                color: $banner-main-h1-text-color;
+                font-weight: 400;
+                font-size: 28px;
+                text-transform: uppercase;
+            }
+            padding-bottom: 50px;
+        }
+        .search {
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                .edit {
+                    position: relative;
+                    .input-search {
+                        border: 1px solid $input-border-color;
+                        width: 370px;
+                        height: 40px;
+                        &:focus+.search-img {
+                            display: none;
+                        }
+                        &:valid+.search-img {
+                            display: none;
+                        }
+                    }
+                    .search-img {
+                        position: absolute;
+                        bottom: 2px;
+                        padding: 8px;
+                        padding-left: 10px;
+                        img {
+                            width: 120%;
+                        }
+                    }
+                }
+                .btn-search {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 400;
+                    font-size: 14px;
+                    margin-left: 10px;
+                    height: 40px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 768px) {
+        .banner-main {
+            height: 362px;
+            .title {
+                line-height: 21px;
+                h1 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    width: 60%;
+                }
+            }
+            .input-search {
+                width: 357px !important;
+            }
+            .btn-search {
+                width: 90px !important;
+            }
+        }
+    }
+    
+    @media(max-width: 500px) {
+        .banner-main {
+            .title {
+                line-height: 21px;
+                h1 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    width: 90%;
+                }
+            }
+            .input-search {
+                width: 260px !important;
+            }
+            .btn-search {
+                width: 90px !important;
+            }
+        }
+    }

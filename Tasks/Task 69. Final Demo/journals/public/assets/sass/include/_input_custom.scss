@@ -1,0 +1,9 @@
+@import "color";
+input {
+    border-color: $input-border-color !important;
+    border-radius: 2px !important;
+    &:focus {
+        box-shadow: none !important;
+        outline: 0 none !important;
+    }
+}

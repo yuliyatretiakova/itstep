@@ -1,0 +1,11 @@
+@import "color";
+button {
+    background: $btn-background-color !important;
+    border-color: $btn-background-color !important;
+    color: $btn-text-color !important;
+    border-radius: 2px !important;
+    &:focus {
+        box-shadow: none !important;
+        outline: 0 none !important;
+    }
+}

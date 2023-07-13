@@ -1,0 +1,93 @@
+.artists_row{
+    display: flex; 
+    margin: 64px 0px;
+    flex-wrap: wrap;
+    
+    @media (min-width: 1280px) {
+        flex-wrap: nowrap;
+    }  
+}
+
+.artist_info {
+    width: 100%;
+    margin-bottom: 40px;
+
+    @media (min-width: 1280px) {
+        width: 35%;
+        margin-right: 68px;
+    }   
+}
+
+.artist_info_card{
+    margin-bottom: 56px;
+}
+
+.artist_info_card__picture{
+    position: relative;
+}
+
+.artist_info_card__name{
+    position: absolute;
+    top: 180px;
+    left: 218px;
+    background-color: $bg2;
+    border-radius: 20px;
+    padding: 16px 24px;
+
+    >h1{
+        width: 100%;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    >p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-block-start: 0px;
+    }
+}
+
+.artist_info__text {
+    >p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        opacity: 1;
+    }
+}
+
+
+.artist_arts{
+    width: 100%;
+    columns: 1;
+
+    @media (min-width: 768px) {
+        columns: 3;
+        column-gap: 10px;
+    }
+    
+    @media (min-width: 1280px) {
+        width: 65%;
+        
+    }
+    
+    @media (min-width: 1920px) {
+        columns: 3; 
+        
+    }
+}
+
+.box {
+    background-color: $bg1;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}

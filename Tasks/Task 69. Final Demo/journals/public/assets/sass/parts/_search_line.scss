@@ -1,0 +1,55 @@
+@import "../include/color";
+.search-line {
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .edit {
+            position: relative;
+            width: 100%;
+            .input-search {
+                border: 1px solid $input-border-color;
+                height: 45px;
+                width: 100%;
+                &:focus+.search-img {
+                    display: none;
+                }
+                &:valid+.search-img {
+                    display: none;
+                }
+            }
+            .search-img {
+                position: absolute;
+                bottom: 2px;
+                padding: 8px;
+                padding-left: 10px;
+                img {
+                    width: 120%;
+                }
+            }
+        }
+        .btn-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 16px;
+            margin-left: 20px;
+            height: 45px;
+            width: 200px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .search-line {
+        form {
+            .btn-search {
+                margin-left: 10px;
+                width: 35%;
+            }
+        }
+    }
+}

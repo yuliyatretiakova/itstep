@@ -1,0 +1,71 @@
+@import "../include/color";
+@import "../include/link";
+.about-the-jornal {
+    font-family: 'Montserrat';
+    font-style: normal;
+    .content {
+        border: 1px solid $about-the-jornal-border-color;
+        padding: 0px 35px 100px 35px;
+        margin-bottom: 140px;
+        .chapter {
+            .title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                line-height: 20px;
+                padding-top: 35px;
+                padding-bottom: 25px;
+                img {
+                    height: 20px;
+                    padding-right: 10px;
+                }
+                h2 {
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin: 0px;
+                }
+            }
+            .links {
+                display: flex;
+                flex-direction: row;
+                border-top: 1px solid $about-the-jornal-border-color;
+                border-bottom: 1px solid $about-the-jornal-border-color;
+                padding-top: 45px;
+                padding-bottom: 45px;
+                ul {
+                    padding-left: 20px;
+                    margin: 0px;
+                    list-style-image: url($about-the-jornal-marker-path);
+                    padding-right: 60px;
+                    line-height: 18px;
+                    li {
+                        padding-top: 6px;
+                        padding-bottom: 6px;
+                        a {
+                            font-weight: 400;
+                            font-size: 15px;
+                            text-decoration: none;
+                            color: $about-the-jornal-li-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .about-the-jornal {
+        .content {
+            padding: 0px 10px 100px 10px;
+            .chapter {
+                .links {
+                    flex-direction: column;
+                    ul {
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

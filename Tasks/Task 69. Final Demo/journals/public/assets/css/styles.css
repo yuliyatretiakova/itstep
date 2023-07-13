@@ -1,0 +1,3979 @@
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.footer {
+  font-family: "Montserrat";
+  font-style: normal;
+  background: #004779;
+  color: #FFFFFF;
+}
+.footer .start-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .start-footer .title {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 18px;
+  margin-bottom: 30px !important;
+}
+.footer .start-footer .info {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  width: 340px;
+}
+.footer .start-footer .info.info-min {
+  width: 250px;
+}
+.footer .start-footer .info .content {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  display: inline-block;
+}
+.footer .start-footer .info .content .fio {
+  margin-top: 10px !important;
+  font-weight: 400;
+}
+.footer .start-footer .info .content p {
+  margin: 0px !important;
+}
+.footer .start-footer .info .picture {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.footer .delimetr {
+  border-top: 1px solid #FFFFFF;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.footer .end-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .end-footer ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px !important;
+}
+.footer .end-footer ul li {
+  list-style-type: none;
+}
+.footer .end-footer ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.footer .end-footer ul li.active a {
+  font-weight: 700;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #FCFCFC;
+}
+.footer .end-footer .lang-switcher li {
+  padding-left: 10px;
+}
+.footer .end-footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.footer .end-footer .social ul {
+  align-items: center;
+}
+.footer .end-footer .social ul li {
+  margin-right: 40px;
+}
+@media (max-width: 576px) {
+  .footer .end-footer .lang-switcher {
+    padding-top: 30px;
+    padding-left: 0px !important;
+  }
+  .footer .end-footer .lang-switcherli {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .start-footer {
+    padding-bottom: 150px !important;
+  }
+}
+@media (max-width: 992px) {
+  .start-footer .info {
+    width: 340px;
+  }
+  .start-footer .info.info-min {
+    width: 340px !important;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.header {
+  font-family: "Montserrat";
+  font-style: normal;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header a {
+  color: #292929;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+.header ul li {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+}
+.header .toggle-menu {
+  display: none;
+}
+.header .menu ul li {
+  display: flex;
+}
+.header .menu ul li a {
+  line-height: 1;
+  text-decoration: none;
+  color: #292929;
+  cursor: pointer;
+  position: relative;
+}
+.header .menu ul li a:after {
+  display: block;
+  content: "";
+  background-color: #004779;
+  height: 3px;
+  width: 0%;
+  margin-top: 38px;
+  position: absolute;
+}
+.header .menu ul li a:hover:after, .header .menu ul li a:focus:after {
+  width: 100%;
+}
+.header .menu ul li a.active:after {
+  display: block;
+  content: "";
+  background-color: #004779;
+  height: 3px;
+  width: 100%;
+  margin-top: 38px;
+  position: absolute;
+}
+.header .menu-entry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .menu-entry .signin {
+  display: flex;
+  align-items: center;
+  border: 1px solid #292929;
+  border-radius: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 40px;
+  height: 100%;
+}
+.header .lang-switcher ul {
+  justify-content: flex-end;
+}
+.header .lang-switcher ul .delimetr {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header .menu-entry .signin {
+    margin-left: 0px !important;
+  }
+  .header .menu-entry .registration {
+    display: none;
+  }
+  .header .toggle-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+button {
+  background: #004779 !important;
+  border-color: #004779 !important;
+  color: white !important;
+  border-radius: 2px !important;
+}
+button:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+input {
+  border-color: rgba(41, 41, 41, 0.5) !important;
+  border-radius: 2px !important;
+}
+input:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+.navigation-journal {
+  border-top: 1px solid #E5E5E5;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.navigation-journal .row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.navigation-journal .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-journal .menu ul {
+  margin-bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0px !important;
+}
+.navigation-journal .menu ul li {
+  display: flex;
+}
+.navigation-journal .menu ul li a {
+  line-height: 1;
+  text-decoration: none;
+  color: #292929;
+  cursor: pointer;
+  position: relative;
+}
+.navigation-journal .menu ul li a:after {
+  display: block;
+  content: "";
+  background-color: #004779;
+  height: 3px;
+  width: 0%;
+  margin-top: 26px;
+  position: absolute;
+}
+.navigation-journal .menu ul li a:hover:after, .navigation-journal .menu ul li a:focus:after {
+  width: 100%;
+}
+.navigation-journal .menu ul li a.active:after {
+  display: block;
+  content: "";
+  background-color: #004779;
+  height: 3px;
+  width: 100%;
+  margin-top: 26px;
+  position: absolute;
+}
+.navigation-journal .menu-right form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.navigation-journal .menu-right form .edit {
+  position: relative;
+}
+.navigation-journal .menu-right form .edit .input-search {
+  width: 200px;
+  flex-grow: 5;
+  height: 35px;
+  padding: 10px;
+}
+.navigation-journal .menu-right form .edit .input-search:focus + .search-img {
+  display: none;
+}
+.navigation-journal .menu-right form .edit .input-search:valid + .search-img {
+  display: none;
+}
+.navigation-journal .menu-right form .edit .search-img {
+  position: absolute;
+  bottom: 2px;
+  padding: 5px;
+  padding-left: 10px;
+}
+.navigation-journal .menu-right form .edit .search-img img {
+  width: 100%;
+}
+.navigation-journal .menu-right form .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  height: 35px;
+  max-width: 150px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .navigation-journal .menu-right {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navigation-journal {
+    display: none;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.face-journal {
+  font-family: "Montserrat";
+  font-style: normal;
+  padding-top: 35px;
+}
+.face-journal .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.face-journal .info .left-info {
+  margin-top: 190px;
+  border: 1px solid #E4E4E4;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.face-journal .info .left-info .tab {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 33%;
+}
+.face-journal .info .left-info .tab .head-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  padding-left: 10px;
+  line-height: 20px;
+}
+.face-journal .info .left-info .tab .head-tab img {
+  margin-right: 10px;
+}
+.face-journal .info .left-info .tab .head-tab span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #292929;
+}
+.face-journal .info .left-info .tab .text-tab {
+  line-height: 17px;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+  height: 230px;
+}
+.face-journal .info .left-info .tab .text-tab p {
+  padding-top: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #292929;
+}
+.face-journal .info .left-info .tab .details-tab {
+  line-height: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.face-journal .info .left-info .tab .details-tab a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  color: #292929;
+}
+.face-journal .info .left-info .tab .details-tab a img {
+  margin-left: 13px;
+}
+.face-journal .info .right-info {
+  margin-left: 30px;
+}
+.face-journal .info .right-info .content {
+  width: 280px;
+  height: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.face-journal .info .right-info .content .tab-image-journal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.face-journal .info .right-info .content .tab-image-journal .tab-image-journal-background {
+  background: rgba(241, 241, 241, 0.5);
+  border: 1px solid #E4E4E4;
+  padding: 5px;
+}
+.face-journal .info .right-info .content .tab-image-journal .tab-image-journal-background img {
+  height: 220px;
+}
+.face-journal .info .right-info .content .tab-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 20px;
+}
+.face-journal .info .right-info .content .tab-button .dropdown.edition {
+  line-height: 22px;
+}
+.face-journal .info .right-info .content .tab-button .dropdown.edition .dropdown-btn {
+  background: white;
+  color: #292929;
+  display: flex;
+  justify-content: space-between;
+}
+.face-journal .info .right-info .content .tab-button .dropdown.edition .show img {
+  transform: rotate(180deg);
+}
+.face-journal .info .right-info .content .tab-button .dropdown.edition ul {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  line-height: 22px;
+  min-width: 25px;
+  margin-top: 5px !important;
+  border: 1px solid rgba(241, 241, 241, 0.5);
+  border-radius: 2px;
+}
+.face-journal .info .right-info .content .tab-button .dropdown.edition ul li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #292929;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.face-journal .info .right-info .content .tab-button .dropdown.edition ul li:hover {
+  cursor: pointer;
+  background: rgba(196, 196, 196, 0.3);
+}
+.face-journal .info .right-info .content .tab-button a {
+  border-top: 1px solid #EDEDED;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #292929;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .face-journal .info {
+    position: relative;
+  }
+  .face-journal .info .left-info {
+    margin-top: 340px;
+    background-color: transparent;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .face-journal .info .left-info .tab {
+    border: 1px solid #E8E8E8;
+    width: 48%;
+  }
+  .face-journal .info .left-info .tab.journal {
+    margin-right: 50%;
+    margin-bottom: 45px;
+  }
+  .face-journal .info .right-info {
+    margin-left: 0px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .face-journal .info {
+    flex-direction: column-reverse;
+  }
+  .face-journal .info .left-info {
+    margin-top: 45px;
+  }
+  .face-journal .info .left-info .tab {
+    width: 100%;
+  }
+  .face-journal .info .left-info .tab.journal {
+    margin-right: 0px;
+  }
+  .face-journal .info .left-info .tab.editor {
+    margin-bottom: 45px;
+  }
+  .face-journal .info .left-info .tab .text-tab {
+    height: 180px;
+  }
+  .face-journal .info .right-info {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 240px;
+    top: 0px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .face-journal .info .right-info .content {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.heading .size-medium h1 {
+  font-weight: 500;
+  font-size: 26px;
+}
+.heading h1 {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  color: #292929;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+.heading a {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+  color: #292929;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+.heading .col-auto {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+.heading-next {
+  display: none;
+  padding-top: 0px !important;
+}
+
+@media (max-width: 768px) {
+  .heading-next {
+    display: flex !important;
+  }
+  .heading-next .next {
+    display: flex !important;
+  }
+  .heading .next {
+    display: none;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.heading-dynamic {
+  font-family: "Montserrat";
+  font-style: normal;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.heading-dynamic h1 {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  color: #292929;
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 0px;
+}
+.heading-dynamic .h1-transaprent-color h1 {
+  color: rgba(41, 41, 41, 0.9);
+}
+.heading-dynamic .width-100 {
+  width: 100%;
+}
+.heading-dynamic .margin-bottom-10 {
+  margin-bottom: 10px;
+}
+.heading-dynamic h2 {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: flex-start;
+  color: #292929;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.heading-dynamic .col-auto {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .heading-dynamic h1 {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .heading-dynamic h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.publications .publication-page {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  width: 350px;
+  height: 430px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+}
+.publications .publication-page span {
+  font-size: 15px;
+  color: #292929;
+}
+.publications .publication-page .head-publication {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.publications .publication-page .head-publication .journal {
+  width: 100%;
+  background: #E4ECEF;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 0px 25px 0px 25px;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.publications .publication-page .head-publication .journal span {
+  font-size: 14px;
+}
+.publications .publication-page .head-publication .date-time {
+  width: 135px;
+  background: #E4ECEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 19px;
+}
+.publications .publication-page .body-publication {
+  border-top: 1px solid rgba(196, 196, 196, 0.5);
+  border-bottom: 1px solid rgba(196, 196, 196, 0.5);
+  padding: 25px;
+  height: 290px;
+  line-height: 19px;
+}
+.publications .publication-page .body-publication h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 50px;
+  color: #292929;
+}
+.publications .publication-page .body-publication span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 14px;
+}
+.publications .publication-page a {
+  text-decoration: none;
+}
+.publications .publication-page a .details {
+  padding: 25px;
+  line-height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publications .publication-page a .details span {
+  color: #004779;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+}
+.publications .col-auto {
+  padding-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+  .publications .row {
+    justify-content: center !important;
+  }
+  .publications .publication-page {
+    width: 100% !important;
+  }
+}
+@media (max-width: 992px) {
+  .publications .publication-page {
+    width: 330px;
+  }
+  .publications .col-auto {
+    padding-bottom: 20px !important;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 20px;
+  background-color: transparent;
+  transform: translateX(-100%) !important;
+  transition: all 0.5s ease-in-out !important;
+  z-index: 100;
+}
+.mobile-menu .block-white {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: white;
+  width: 200px !important;
+  height: 100%;
+  z-index: 1;
+}
+.mobile-menu .wrapper {
+  width: 440px;
+  background: white;
+  z-index: 999;
+  padding-left: 0px;
+}
+.mobile-menu .wrapper a {
+  color: #292929;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.mobile-menu .wrapper a i {
+  padding-right: 10px;
+}
+.mobile-menu .wrapper a i img {
+  width: 12px;
+  transform: rotate(270deg);
+}
+.mobile-menu .wrapper ul {
+  margin: 0px;
+  padding: 0px;
+  border-top: 1px solid #D2D0D1;
+  padding-bottom: 60px;
+}
+.mobile-menu .wrapper ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 50px;
+  width: 95%;
+  border-bottom: 1px solid #D2D0D1;
+}
+.mobile-menu .wrapper .mm-close {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 440px;
+  padding-left: 15px;
+}
+.mobile-menu .wrapper .mm-close img {
+  width: 22px;
+}
+
+.mm-open {
+  transform: translateX(0%) !important;
+}
+
+@media (max-width: 576px) {
+  .mobile-menu {
+    background: white;
+  }
+  .mobile-menu .wrapper {
+    width: 100%;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+input {
+  border-color: rgba(41, 41, 41, 0.5) !important;
+  border-radius: 2px !important;
+}
+input:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+button {
+  background: #004779 !important;
+  border-color: #004779 !important;
+  color: white !important;
+  border-radius: 2px !important;
+}
+button:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+.banner-main {
+  height: 546px;
+  background-image: url("../img/banner-main.png");
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.banner-main.no-search {
+  height: 340px;
+}
+.banner-main.no-search .title {
+  padding-bottom: 0px;
+}
+.banner-main .logo {
+  padding-bottom: 50px;
+}
+.banner-main .title {
+  font-family: "Times New Roman";
+  font-style: normal;
+  line-height: 32px;
+  padding-bottom: 50px;
+}
+.banner-main .title h1 {
+  color: #4F5153;
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.banner-main .search form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.banner-main .search form .edit {
+  position: relative;
+}
+.banner-main .search form .edit .input-search {
+  border: 1px solid rgba(41, 41, 41, 0.5);
+  width: 370px;
+  height: 40px;
+}
+.banner-main .search form .edit .input-search:focus + .search-img {
+  display: none;
+}
+.banner-main .search form .edit .input-search:valid + .search-img {
+  display: none;
+}
+.banner-main .search form .edit .search-img {
+  position: absolute;
+  bottom: 2px;
+  padding: 8px;
+  padding-left: 10px;
+}
+.banner-main .search form .edit .search-img img {
+  width: 120%;
+}
+.banner-main .search form .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 10px;
+  height: 40px;
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .banner-main {
+    height: 362px;
+  }
+  .banner-main .title {
+    line-height: 21px;
+  }
+  .banner-main .title h1 {
+    font-weight: 400;
+    font-size: 18px;
+    width: 60%;
+  }
+  .banner-main .input-search {
+    width: 357px !important;
+  }
+  .banner-main .btn-search {
+    width: 90px !important;
+  }
+}
+@media (max-width: 500px) {
+  .banner-main .title {
+    line-height: 21px;
+  }
+  .banner-main .title h1 {
+    font-weight: 400;
+    font-size: 18px;
+    width: 90%;
+  }
+  .banner-main .input-search {
+    width: 260px !important;
+  }
+  .banner-main .btn-search {
+    width: 90px !important;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.journal-list .elem {
+  background: rgba(196, 196, 196, 0.1);
+  display: flex;
+  padding: 30px 5% 30px 5%;
+  height: 394px;
+  margin-bottom: 25px;
+}
+.journal-list .elem .photo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-right: 40px;
+}
+.journal-list .elem .photo img {
+  height: 100%;
+}
+.journal-list .elem .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  padding: 35px;
+}
+.journal-list .elem .details h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #002945;
+}
+.journal-list .elem .details .delimetr {
+  width: 100px;
+  border-top: 3px solid #004779;
+}
+.journal-list .elem .details p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+.journal-list .elem .details .more a {
+  text-decoration: none !important;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 10px 30px 10px 30px;
+  color: #002945;
+  border: 1px solid #C4C4C4;
+}
+
+@media (max-width: 992px) {
+  .journal-list .elem {
+    height: 490px;
+  }
+  .journal-list .elem .photo {
+    width: 200px;
+    padding-bottom: 200px;
+  }
+  .journal-list .elem .photo img {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .journal-list .container {
+    padding: 0px !important;
+  }
+  .journal-list .elem {
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .journal-list .elem .photo {
+    padding-bottom: 20px;
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.news-list {
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 17px;
+}
+.news-list .news {
+  margin-bottom: 20px;
+  border: 1px solid #939393;
+  padding: 20px;
+  width: 410px;
+  height: 250px;
+}
+.news-list .news .date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.news-list .news .date span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #292929;
+  padding-left: 12px;
+}
+.news-list .news h2 {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #002945;
+}
+.news-list .news p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #292929;
+}
+
+@media (max-width: 1400px) {
+  .news-list .news {
+    width: 350px;
+    height: 280px;
+  }
+}
+@media (max-width: 992px) {
+  .news-list .news {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .news-list .news {
+    width: 100%;
+    height: 260px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.publication-list .publication-page {
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  width: 410px;
+  height: 350px;
+  border: 1px solid rgba(196, 196, 196, 0.5);
+}
+.publication-list .publication-page span {
+  font-size: 15px;
+  color: #292929;
+}
+.publication-list .publication-page .head-publication {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.publication-list .publication-page .head-publication .journal {
+  width: 100%;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 0px 25px 0px 25px;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.publication-list .publication-page .head-publication .journal span {
+  font-size: 14px;
+}
+.publication-list .publication-page .head-publication .date-time {
+  width: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 19px;
+}
+.publication-list .publication-page .body-publication {
+  border-top: 1px solid rgba(196, 196, 196, 0.5);
+  padding: 25px;
+  height: 200px;
+  line-height: 19px;
+}
+.publication-list .publication-page .body-publication h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 50px;
+  color: #292929;
+}
+.publication-list .publication-page .body-publication span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 14px;
+}
+.publication-list .publication-page a {
+  text-decoration: none;
+}
+.publication-list .publication-page a .details {
+  padding: 25px;
+  line-height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publication-list .publication-page a .details span {
+  color: #004779;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.background-color-1 .journal {
+  background: #E4ECEF;
+}
+.background-color-1 .date-time {
+  background: #E4ECEF;
+}
+
+.background-color-2 .journal {
+  background: #D2D0D1;
+}
+.background-color-2 .date-time {
+  background: #D2D0D1;
+}
+
+.background-color-3 .journal {
+  background: #B0DAD6;
+}
+.background-color-3 .date-time {
+  background: #B0DAD6;
+}
+
+@media (max-width: 1400px) {
+  .publication-list .publication-page {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (max-width: 992px) {
+  .publication-list .publication-page {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .publication-list .publication-page {
+    width: 100%;
+    height: 320px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.pagination {
+  font-family: "Open Sans";
+  font-style: normal;
+}
+.pagination .panel {
+  background: #F9F9F9;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.pagination .panel-button {
+  display: none;
+}
+.pagination ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #F9F9F9;
+  padding: 0px;
+  margin: 0px;
+}
+.pagination ul li {
+  list-style-type: none;
+  line-height: 22px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.pagination ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #004779 !important;
+  border: 0px;
+  border-radius: 0px;
+  background: #F9F9F9 !important;
+}
+.pagination ul li.active a {
+  font-weight: 700 !important;
+}
+
+@media (max-width: 992px) {
+  .pagination ul li {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .pagination ul li a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 780px) {
+  .pagination .panel {
+    display: none;
+  }
+  .pagination .panel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .pagination .panel-button button {
+    color: white;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 163px;
+    height: 46px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+input {
+  border-color: rgba(41, 41, 41, 0.5) !important;
+  border-radius: 2px !important;
+}
+input:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+button {
+  background: #004779 !important;
+  border-color: #004779 !important;
+  color: white !important;
+  border-radius: 2px !important;
+}
+button:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+}
+
+.banner-journal {
+  font-family: "Montserrat";
+  font-style: normal;
+  height: 344px;
+  background-image: url("../img/journals/banner-jour1.png");
+  background-position: center center;
+}
+.banner-journal .title {
+  line-height: 34px;
+}
+.banner-journal .title h1 {
+  font-weight: 400;
+  font-size: 28px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.banner-journal .search form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.banner-journal .search form .edit {
+  position: relative;
+}
+.banner-journal .search form .edit input {
+  background: transparent;
+}
+.banner-journal .search form .edit .input-search {
+  border: 1px solid rgba(41, 41, 41, 0.5);
+  width: 320px;
+  height: 35px;
+}
+.banner-journal .search form .edit .input-search:focus + .search-img {
+  display: none;
+}
+.banner-journal .search form .edit .input-search:valid + .search-img {
+  display: none;
+}
+.banner-journal .search form .edit .search-img {
+  position: absolute;
+  bottom: 2px;
+  padding: 4px;
+  padding-left: 10px;
+}
+.banner-journal .search form .edit .search-img img {
+  width: 100%;
+}
+.banner-journal .search form .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 10px;
+  height: 35px;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .banner-journal {
+    background-position: 30% 50%;
+  }
+  .banner-journal .title h1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-journal .input-search {
+    width: 250px !important;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.journal-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.journal-info .content {
+  display: flex;
+  flex-direction: row;
+}
+.journal-info .content .block-image {
+  background: #E4E4E4;
+  border: 0px;
+  padding: 30px;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+.journal-info .content .block-image .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 1px solid #EDEDED;
+  padding: 40px;
+  height: 100%;
+}
+.journal-info .content .block-image .photo img {
+  border: 1px solid #EDEDED;
+  padding: 10px;
+  height: 100%;
+}
+.journal-info .content .block-details {
+  background: #E4E4E4;
+  border: 0px;
+  padding: 30px;
+}
+.journal-info .content .block-details .details {
+  background: white;
+  line-height: 24px;
+  padding: 40px;
+  height: 100%;
+}
+.journal-info .content .block-details .details h2 {
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 35px;
+  color: #002945;
+}
+.journal-info .content .block-details .details .info {
+  line-height: 19px;
+}
+.journal-info .content .block-details .details .info p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+}
+
+@media (max-width: 992px) {
+  .journal-info .content {
+    flex-direction: column;
+  }
+  .journal-info .content .block-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .journal-info .content .block-details {
+    margin-top: 30px;
+    border: 1px solid #EDEDED;
+    background: white;
+    width: 100%;
+  }
+  .journal-info .content .block-details .details {
+    padding: 0px;
+  }
+  .journal-info .content .block-details .details p {
+    text-align: justify;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.publications-download .publication-page {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  color: #292929;
+  border: 1px solid rgba(41, 41, 41, 0.4);
+  width: 380px;
+  margin-bottom: 50px;
+}
+.publications-download .publication-page .publication-body {
+  padding: 20px;
+}
+.publications-download .publication-page .publication-body .journal {
+  line-height: 20px;
+}
+.publications-download .publication-page .publication-body .journal span {
+  font-weight: 400;
+  font-size: 16px;
+}
+.publications-download .publication-page .publication-body .title {
+  line-height: 22px;
+}
+.publications-download .publication-page .publication-body .title h2 {
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.publications-download .publication-page .publication-body .autors {
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 20px;
+}
+.publications-download .publication-page .publication-body .autors span {
+  font-weight: 400;
+  font-size: 15px;
+}
+.publications-download .publication-page .publication-footer {
+  display: flex;
+  flex-direction: row;
+  line-height: 21px;
+}
+.publications-download .publication-page .publication-footer .date-time {
+  padding: 26px 16px 26px 16px;
+  border-top: 1px solid rgba(41, 41, 41, 0.4);
+  flex-grow: 1;
+}
+.publications-download .publication-page .publication-footer .date-time span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.publications-download .publication-page .publication-footer .download {
+  padding: 26px 16px 26px 16px;
+  border-top: 1px solid rgba(41, 41, 41, 0.4);
+  border-left: 1px solid rgba(41, 41, 41, 0.4);
+  color: #002945;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+}
+.publications-download .publication-page .publication-footer .download a {
+  text-decoration: none;
+  color: #292929;
+}
+.publications-download .publication-page .publication-footer .download span {
+  padding-right: 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (max-width: 1400px) {
+  .publications-download .publication-page {
+    width: 350px !important;
+    margin-bottom: 30px !important;
+  }
+}
+@media (max-width: 992px) {
+  .publications-download .publication-page {
+    width: 330px !important;
+  }
+  .publications-download .publication-page .publication-footer .date-time {
+    padding: 25px 10px 25px 10px !important;
+  }
+  .publications-download .publication-page .publication-footer .download {
+    padding: 25px 10px 25px 10px !important;
+  }
+}
+@media (max-width: 768px) {
+  .publications-download .publication-page {
+    width: 100% !important;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.publications-list-download .col-12 {
+  margin-bottom: 20px;
+}
+.publications-list-download .publication-page {
+  font-family: "Montserrat";
+  font-style: normal;
+  color: #002945;
+  border: 1px solid #E5E5E5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px 25px 30px;
+}
+.publications-list-download .publication-page .title {
+  order: 1;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50% !important;
+  width: 60%;
+}
+.publications-list-download .publication-page .title h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0px;
+}
+.publications-list-download .publication-page .panel-download {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 21px;
+  margin-left: 12%;
+}
+.publications-list-download .publication-page .panel-download .download {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+}
+.publications-list-download .publication-page .panel-download .download a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #002945;
+}
+.publications-list-download .publication-page .panel-download .download span {
+  padding-right: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.publications-list-download .publication-page .date-time {
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.publications-list-download .publication-page .date-time span {
+  color: #292929;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+@media (max-width: 800px) {
+  .publications-list-download .publication-page {
+    height: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .publications-list-download .publication-page .title {
+    order: 1;
+    width: 70% !important;
+  }
+  .publications-list-download .publication-page .date-time {
+    align-items: flex-start;
+    order: 2;
+  }
+  .publications-list-download .publication-page .panel-download {
+    order: 3;
+    margin-left: 0px;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .publications-list-download .publication-page {
+    height: 100%;
+    flex-direction: column;
+  }
+  .publications-list-download .publication-page .title {
+    width: 100% !important;
+  }
+  .publications-list-download .publication-page .date-time {
+    justify-content: start;
+    padding-top: 30px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.about-the-jornal {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.about-the-jornal .content {
+  border: 1px solid #E4E4E4;
+  padding: 0px 35px 100px 35px;
+  margin-bottom: 140px;
+}
+.about-the-jornal .content .chapter .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 20px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+.about-the-jornal .content .chapter .title img {
+  height: 20px;
+  padding-right: 10px;
+}
+.about-the-jornal .content .chapter .title h2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+}
+.about-the-jornal .content .chapter .links {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.about-the-jornal .content .chapter .links ul {
+  padding-left: 20px;
+  margin: 0px;
+  list-style-image: url("../img/journals/chevron_right.png");
+  padding-right: 60px;
+  line-height: 18px;
+}
+.about-the-jornal .content .chapter .links ul li {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.about-the-jornal .content .chapter .links ul li a {
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: #004779;
+}
+
+@media (max-width: 768px) {
+  .about-the-jornal .content {
+    padding: 0px 10px 100px 10px;
+  }
+  .about-the-jornal .content .chapter .links {
+    flex-direction: column;
+  }
+  .about-the-jornal .content .chapter .links ul {
+    padding-right: 0px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.authors-buttons {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+.authors-buttons .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 17px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.authors-buttons .buttons button {
+  width: 240px;
+  height: 45px;
+  background: white !important;
+  border: 1px solid #C4C4C4 !important;
+  font-weight: 400;
+  font-size: 14px;
+  color: #292929 !important;
+}
+.authors-buttons .buttons button .picture {
+  background-image: url("../img/journals/load.png");
+  padding-left: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+}
+.authors-buttons .buttons button.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  background: #004779 !important;
+  color: white !important;
+}
+
+@media (max-width: 1200px) {
+  .authors-buttons .buttons {
+    flex-direction: column;
+  }
+  .authors-buttons .buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .authors-buttons .buttons button.load {
+    margin-right: 0px;
+    margin-bottom: 25px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.info .info-block {
+  padding: 0px 30px 24px 30px;
+  border: 1px solid #E5E5E5;
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 22px;
+  margin-bottom: 50px;
+}
+.info .info-block h2 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+.info .info-block p {
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .info .info-block p {
+    text-align: justify;
+  }
+}
+
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.archive-list .elem {
+  margin-bottom: 50px;
+  border: 1px solid #EDEDED;
+}
+.archive-list .elem .picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.archive-list .elem .picture .content {
+  padding: 10px;
+  border: 1px solid #EDEDED;
+  background-color: rgba(241, 241, 241, 0.5);
+}
+.archive-list .elem .picture .content img {
+  width: 160px;
+  height: 220px;
+}
+.archive-list .elem .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #EDEDED;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
+}
+.archive-list .elem .title a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+  color: #292929;
+}
+
+.publication-details {
+  font-family: "Montserrat";
+  font-style: normal;
+  color: #292929;
+}
+.publication-details .details {
+  line-height: 32px;
+}
+.publication-details .details h1 {
+  padding-top: 50px;
+  font-weight: 500;
+  font-size: 26px;
+  width: 85%;
+}
+.publication-details .details h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.publication-details .details .panel-more {
+  border: 1px solid #E5E5E5;
+  padding: 30px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.publication-details .details .panel-more p {
+  font-weight: 400;
+  font-size: 18px;
+}
+.publication-details .details .panel-more .authors {
+  display: block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.publication-details .details .panel-more .panel-download {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.publication-details .details .panel-more .panel-download a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+.publication-details .details .panel-more .panel-download .download {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #004779;
+  line-height: 22px;
+  height: 45px;
+  width: 140px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.publication-details .details .panel-more .panel-download .download img {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .publication-details .details h1 {
+    width: 100%;
+  }
+  .publication-details .details .panel-more p {
+    text-align: justify;
+  }
+}
+@media (max-width: 500px) {
+  .publication-details .details .panel-more .panel-download {
+    justify-content: space-between;
+  }
+  .publication-details .details .panel-more .panel-download .download {
+    margin-right: 0px;
+    width: 46%;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.authors .author {
+  border: 1px solid #E5E5E5;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.authors .author .name {
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 27px;
+  order: 1;
+}
+.authors .author .name h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #002945;
+}
+.authors .author .address {
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 22px;
+  order: 2;
+}
+.authors .author .address span {
+  color: #292929;
+  font-weight: 300;
+  font-size: 18px;
+}
+.authors .author .info {
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 80%;
+  order: 3;
+}
+.authors .author .info p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #292929;
+}
+
+@media (max-width: 768px) {
+  .authors .author .info {
+    width: 100%;
+  }
+  .authors .author .info p {
+    text-align: justify;
+  }
+}
+@media (max-width: 600px) {
+  .authors .author .address {
+    order: 3;
+  }
+  .authors .author .info {
+    order: 2;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.search-line form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.search-line form .edit {
+  position: relative;
+  width: 100%;
+}
+.search-line form .edit .input-search {
+  border: 1px solid rgba(41, 41, 41, 0.5);
+  height: 45px;
+  width: 100%;
+}
+.search-line form .edit .input-search:focus + .search-img {
+  display: none;
+}
+.search-line form .edit .input-search:valid + .search-img {
+  display: none;
+}
+.search-line form .edit .search-img {
+  position: absolute;
+  bottom: 2px;
+  padding: 8px;
+  padding-left: 10px;
+}
+.search-line form .edit .search-img img {
+  width: 120%;
+}
+.search-line form .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 20px;
+  height: 45px;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .search-line form .btn-search {
+    margin-left: 10px;
+    width: 35%;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.publications-download-full {
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 27px;
+}
+.publications-download-full h1 {
+  font-weight: 400;
+  font-size: 22px;
+  color: #292929;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
+}
+.publications-download-full .publication-page {
+  font-weight: 400;
+  color: #292929;
+  border: 1px solid rgba(41, 41, 41, 0.4);
+  margin-bottom: 35px;
+}
+.publications-download-full .publication-page .publication-body {
+  padding: 20px 30px 20px 30px;
+}
+.publications-download-full .publication-page .publication-body .journal {
+  line-height: 20px;
+  padding-bottom: 25px;
+}
+.publications-download-full .publication-page .publication-body .journal span {
+  font-weight: 400;
+  font-size: 16px;
+}
+.publications-download-full .publication-page .publication-body .title {
+  line-height: 22px;
+}
+.publications-download-full .publication-page .publication-body .title h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.publications-download-full .publication-page .publication-body .autors {
+  font-family: "Open Sans";
+  font-style: normal;
+  line-height: 20px;
+  padding-top: 30px;
+}
+.publications-download-full .publication-page .publication-body .autors span {
+  font-weight: 400;
+  font-size: 15px;
+}
+.publications-download-full .publication-page .publication-footer {
+  display: flex;
+  flex-direction: row;
+  line-height: 21px;
+  height: 70px;
+}
+.publications-download-full .publication-page .publication-footer .date-time {
+  padding-left: 30px;
+  border-top: 1px solid rgba(41, 41, 41, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+.publications-download-full .publication-page .publication-footer .date-time span {
+  font-weight: 400;
+  font-size: 18px;
+}
+.publications-download-full .publication-page .publication-footer .download {
+  border-top: 1px solid rgba(41, 41, 41, 0.4);
+  border-left: 1px solid rgba(41, 41, 41, 0.4);
+  color: #002945;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+}
+.publications-download-full .publication-page .publication-footer .download a {
+  text-decoration: none;
+  color: #292929;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.publications-download-full .publication-page .publication-footer .download a span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .publications-download-full .publication-page .publication-footer .date-time {
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .publications-download-full .publication-page .publication-footer .date-time span {
+    font-size: 17px;
+  }
+  .publications-download-full .publication-page .publication-footer .download a {
+    padding: 10px;
+  }
+  .publications-download-full .publication-page .publication-footer .download a span {
+    font-size: 18px;
+  }
+}
+/*
+* header color
+*/
+/*
+* navigation journal 
+*/
+/*
+* face journal 
+*/
+/*
+* heading
+*/
+/*
+* publications color
+*/
+/*
+* footer color
+*/
+/*
+* mobile-menu
+*/
+/*
+* banner-main
+*/
+/*
+* journal-list
+*/
+/*
+* news-list
+*/
+/*
+* publications-list
+*/
+/*
+* pagination
+*/
+/*
+* journal-info
+*/
+/*
+* publications-download
+*/
+/*
+* publications-list-download
+*/
+/*
+* about-the-jornal
+*/
+/*
+* authors-buttons
+*/
+/*
+* archive-list
+*/
+.filter {
+  font-family: "Montserrat";
+  font-style: normal;
+  display: none;
+  margin-bottom: 30px;
+}
+.filter.open {
+  display: block;
+}
+.filter.open .dropdown {
+  line-height: 22px;
+  margin-bottom: 33px;
+}
+.filter.open .dropdown .dropdown-btn {
+  display: block;
+  text-align: start;
+  text-decoration: none;
+  background: #004779;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 18px 30px 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter.open .dropdown .show img {
+  transform: rotate(180deg);
+}
+.filter.open .dropdown ul {
+  padding: 15px;
+  width: 100%;
+  line-height: 22px;
+  min-width: 25px;
+  margin-top: 5px !important;
+  border: 1px solid rgba(41, 41, 41, 0.4);
+  border-radius: 2px;
+}
+.filter.open .dropdown ul li {
+  font-weight: 500;
+  font-size: 18px;
+  color: #292929;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.filter.open .dropdown ul li:hover {
+  cursor: pointer;
+  background: rgba(196, 196, 196, 0.3);
+}
+.filter.open .body {
+  border: 1px solid rgba(41, 41, 41, 0.4);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.filter.open .body .dropdown {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.4);
+  margin-bottom: 0px;
+}
+.filter.open .body .dropdown .dropdown-btn {
+  padding-left: 11px;
+  padding-right: 11px;
+  background: white;
+  color: #292929;
+}
+.filter.open .body .select ul li {
+  display: flex;
+  align-items: center;
+}
+.filter.open .body .select ul li input {
+  margin: 0px;
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+.filter.open .body .select ul li input[type=checkbox]:checked {
+  background-color: #004779;
+}
+.filter.open .body .select ul li label {
+  width: 90%;
+}
+.filter.open .body .between-date {
+  border-bottom: 1px solid rgba(41, 41, 41, 0.4);
+}
+.filter.open .body .between-date h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #292929;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+.filter.open .body .between-date span {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #292929;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.filter.open .body .between-date .date-panel {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 11px 21px 11px;
+  margin-bottom: 20px;
+}
+.filter.open .body .between-date .date-panel .dropdown a {
+  border: 1px solid rgba(41, 41, 41, 0.4);
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter.open .body .between-date .date-panel .dropdown a span {
+  display: block;
+}
+.filter.open .body .between-date .date-panel .dropdown a i img {
+  width: 80%;
+}
+.filter.open .body .between-date .date-panel .dropdown ul {
+  line-height: 20px;
+}
+.filter.open .body .between-date .date-panel .dropdown ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #292929;
+  padding-left: 10px;
+}
+.filter.open .body .between-date .date-panel .dropdown .dropdown-menu {
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.filter.open .body .between-date .date-panel .dropdown.year {
+  width: 40%;
+  height: 50px;
+}
+.filter.open .body .between-date .date-panel .dropdown.month {
+  width: 30%;
+  height: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.filter.open .body .between-date .date-panel .dropdown.day {
+  width: 30%;
+  height: 50px;
+}
+.filter.open .body .btn-search {
+  width: 100%;
+  height: 58px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.search-publications {
+  line-height: 20px;
+}
+.search-publications .btn-open-filter {
+  display: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 100%;
+  height: 45px;
+}
+
+@media (max-width: 991.5px) {
+  .search-publications .btn-open-filter {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+.banner-background {
+  height: 344px;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 188px;
+  z-index: -1;
+}
+.banner-background.jour1-bg {
+  background-image: url("../img/journals/jour1-bg.png");
+}
+.banner-background.jour2-bg {
+  background-image: url("../img/journals/jour2-bg.png");
+}
+.banner-background.jour3-bg {
+  background-image: url("../img/journals/jour3-bg.png");
+}
+.banner-background.jour4-bg {
+  background-image: url("../img/journals/jour4-bg.png");
+}
+
+.banner-title {
+  height: 344px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 188px;
+}
+.banner-title .container {
+  height: 100%;
+}
+.banner-title .container .row {
+  height: 100%;
+}
+.banner-title .content {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  z-index: 10;
+}
+.banner-title .content .title {
+  line-height: 34px;
+}
+.banner-title .content .title h1 {
+  font-weight: 400;
+  font-size: 44px;
+  color: rgba(41, 41, 41, 0.9);
+  margin-bottom: 35px;
+}
+.banner-title .content .title h1.white {
+  color: white;
+}
+.banner-title .content .title h1.size-28 {
+  font-size: 28px !important;
+}
+.banner-title .content form {
+  width: 100%;
+  display: none;
+  flex-direction: row;
+}
+.banner-title .content form .edit {
+  position: relative;
+}
+.banner-title .content form .edit .input-search {
+  width: 200px;
+  flex-grow: 5;
+  height: 35px;
+  padding: 10px;
+}
+.banner-title .content form .edit .input-search:focus + .search-img {
+  display: none;
+}
+.banner-title .content form .edit .input-search:valid + .search-img {
+  display: none;
+}
+.banner-title .content form .edit .search-img {
+  position: absolute;
+  bottom: 2px;
+  padding: 5px;
+  padding-left: 10px;
+}
+.banner-title .content form .edit .search-img img {
+  width: 100%;
+}
+.banner-title .content form .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  height: 35px;
+  width: 100px;
+}
+.banner-title .content form .btn-search.white-btn {
+  background-color: white !important;
+  color: #292929 !important;
+}
+
+@media (max-width: 992px) {
+  .banner-background {
+    background-position: 0% 0%;
+    top: 147px;
+  }
+  .banner-title {
+    top: 147px;
+  }
+  .banner-title .content .title h1 {
+    font-size: 28px !important;
+  }
+  .banner-title .content .title h1.size-28 {
+    font-size: 22px !important;
+  }
+  .banner-title .content form {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .banner-background {
+    top: 70px;
+    background-size: auto;
+  }
+  .banner-title {
+    top: 70px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+}/*# sourceMappingURL=styles.css.map */

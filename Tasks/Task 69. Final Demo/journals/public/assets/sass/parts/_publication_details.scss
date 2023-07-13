@@ -1,0 +1,97 @@
+.publication-details {
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #292929;
+    .details {
+        line-height: 32px;
+        h1 {
+            padding-top: 50px;
+            font-weight: 500;
+            font-size: 26px;
+            width: 85%;
+        }
+        h2 {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-weight: 400;
+            font-size: 24px;
+        }
+        .panel-more {
+            border: 1px solid #E5E5E5;
+            padding: 30px;
+            line-height: 22px;
+            margin-bottom: 20px;
+            p {
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .authors {
+                display: block;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                padding-top: 30px !important;
+                padding-bottom: 30px !important;
+            }
+            .panel-download {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: white;
+                }
+                .download {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    background: #004779;
+                    line-height: 22px;
+                    height: 45px;
+                    width: 140px;
+                    margin-right: 20px;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                    img {
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .publication-details {
+        .details {
+            h1 {
+                width: 100%;
+            }
+            .panel-more {
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .publication-details {
+        .details {
+            .panel-more {
+                .panel-download {
+                    justify-content: space-between;
+                    .download {
+                        margin-right: 0px;
+                        width: 46%;
+                    }
+                }
+            }
+        }
+    }
+}

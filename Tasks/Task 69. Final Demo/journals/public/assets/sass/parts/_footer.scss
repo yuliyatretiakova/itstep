@@ -1,0 +1,118 @@
+// footer
+@import "../include/color";
+.footer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    background: $footer-backgroud-color;
+    color: $footer-text-color;
+    .start-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .title {
+            font-weight: 500;
+            line-height: 22px;
+            font-size: 18px;
+            margin-bottom: 30px !important;
+        }
+        .info {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            height: 80px;
+            width: 340px;
+            &.info-min {
+                width: 250px;
+            }
+            .content {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 20px;
+                display: inline-block;
+                .fio {
+                    margin-top: 10px !important;
+                    font-weight: 400;
+                }
+                p {
+                    margin: 0px !important;
+                }
+            }
+            .picture {
+                width: 30px;
+                height: 30px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .delimetr {
+        border-top: 1px solid $footer-text-color;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .end-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            padding: 0px !important;
+            li {
+                list-style-type: none;
+                a {
+                    color: $footer-text-color;
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+                &.active {
+                    a {
+                        font-weight: 700;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid $footer-text-lang-switcher-color;
+                    }
+                }
+            }
+        }
+        .lang-switcher li {
+            padding-left: 10px;
+        }
+        .social {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            ul {
+                align-items: center;
+                li {
+                    margin-right: 40px;
+                }
+            }
+        }
+        @media(max-width: 576px) {
+            .lang-switcher {
+                padding-top: 30px;
+                padding-left: 0px !important;
+                &li {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .start-footer {
+        padding-bottom: 150px !important;
+    }
+}
+
+@media(max-width: 992px) {
+    .start-footer {
+        .info {
+            width: 340px;
+            &.info-min {
+                width: 340px !important;
+            }
+        }
+    }
+}

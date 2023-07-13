@@ -1,0 +1,113 @@
+@import "../include/color";
+.publications-list-download {
+    .col-12 {
+        margin-bottom: 20px;
+    }
+    .publication-page {
+        font-family: 'Montserrat';
+        font-style: normal;
+        color: $publications-list-download-text-color;
+        border: 1px solid $publications-list-download-border-color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 30px 25px 30px;
+        .title {
+            order: 1;
+            line-height: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50% !important;
+            h2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                margin: 0px;
+            }
+            width: 60%;
+        }
+        .panel-download {
+            order: 2;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            line-height: 21px;
+            // height: 100%;
+            margin-left: 12%;
+            .download {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding-right: 40px;
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color: $publications-list-download-text-color;
+                }
+                span {
+                    padding-right: 15px;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+        .date-time {
+            order: 3;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            span {
+                color: $publications-list-download-date-color;
+                font-weight: 400;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .publications-list-download {
+        .publication-page {
+            height: 100%;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .title {
+                order: 1;
+                width: 70% !important;
+            }
+            .date-time {
+                align-items: flex-start;
+                order: 2;
+            }
+            .panel-download {
+                order: 3;
+                margin-left: 0px;
+                padding-top: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .publications-list-download {
+        .publication-page {
+            height: 100%;
+            flex-direction: column;
+            .title {
+                width: 100% !important;
+            }
+            .date-time {
+                justify-content: start;
+                padding-top: 30px;
+            }
+        }
+    }
+}
