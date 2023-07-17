@@ -9,9 +9,11 @@
 
 .footer_logo{
 
-    >img{
-        margin-bottom: 0px;
-    }
+    >a{
+        >img{
+            margin-bottom: 0px;
+        }
+    }   
 }
 
 .footer_navi {
@@ -72,6 +74,10 @@
 }
 
 .mobile-menu {
+
+    >a img{
+        margin-bottom: 0px;
+    }
     @media (min-width: 1280px) {
         display: none;
     }

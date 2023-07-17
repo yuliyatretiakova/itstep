@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -13,37 +14,29 @@
         <div class="container">
             <div class="header_row">
                 <div class="header_logo">
-                    <img src="./img/header/header logo.png" alt="logo">
+                    <a href="main.html"><img src="./img/header/header logo.png" alt="logo"></a>
                 </div>
                 <div class="header_navi">
                     <div class="header_navi_info">
                         <ul>
-                            <li>
-                                <a href="">artists</a>
-                            </li>
-                            <li>
-                                <a href="">map</a>
-                            </li>
-                            <li>
-                                <a href="">about</a>
-                            </li>
+                            <li><a href="artists.html">artists</a></li>
+                            <li><a href="map.html">map</a></li>
+                            <li><a href="about.html">about</a></li>
                         </ul>
                     </div>
                     <div class="header_navi_submit">
-                        <span>
-                            <a href="#">submit an art</a>
-                        </span>
+                        <span><a href="formAddArt.html">submit an art</a></span>
                     </div>
                 </div>
                 <div class="mobile-menu">
-                    <a href="#"><img src="./img/header/icomoon-free_menu (1).png" alt="mobile-menu"></a>
+                    <a href="#" id="open_menu"><img src="./img/header/icomoon-free_menu (1).png" alt="mobile-menu"></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="artist">
         <div class="container">
-            <div class="artists_row">
+            <div class="artist_row">
                 <div class="artist_info">
                     <div class="artist_info_card">
                         <div class="artist_info_card__picture">
@@ -62,20 +55,46 @@
                     </div>
                 </div>
                 <div class="artist_arts">
-                    <div class="box">
-                        <img src="./img/main_layout/1.png" alt="picture">
+                    <div class="box_new">
+                        <a data-fancybox="gallery" href="./img/main/vitebsk street art_files/_1.jpg">
+                            <img src="./img/main_layout/1.png" alt="picture">
+                        </a>
+                        
+                            <a href="map.html" class="box_new_artist-tag"></a>
+                        
+                        
                     </div>
-                    <div class="box">
-                        <img src="./img/main_layout/10.png" alt="picture">
+                    <div class="box_new">
+                        <a data-fancybox="gallery" href="./img/main/vitebsk street art_files/_10b.jpg">
+                            <img src="./img/main_layout/10.png" alt="picture">
+                        </a>
+                        
+                            <a href="map.html" class="box_new_artist-tag"></a>
+                        
                     </div>
-                    <div class="box">
-                        <img src="./img/main_layout/2.png" alt="picture">
+                    <div class="box_new">
+                        <a data-fancybox="gallery" href="./img/main/vitebsk street art_files/_9.jpg">
+                            <img src="./img/main_layout/2.png" alt="picture">
+                        </a>
+                        
+                            <a href="map.html" class="box_new_artist-tag"></a>
+                        
                     </div>
-                    <div class="box">
-                        <img src="./img/main_layout/22.png" alt="picture">
+                    <div class="box_new">
+                        <a data-fancybox="gallery" href="./img/main/vitebsk street art_files/_22b.jpg">
+                            <img src="./img/main_layout/22.png" alt="picture">
+                        </a>
+                        
+                            <a href="map.html" class="box_new_artist-tag"></a>
+                        
                     </div>
-                    <div class="box">
-                        <img src="./img/main_layout/18.png" alt="picture">
+                    <div class="box_new">
+                        <a data-fancybox="gallery" href="./img/main/vitebsk street art_files/_18.jpg">
+                            <img src="./img/main_layout/18.png" alt="picture">
+                        </a>
+                        
+                            <a href="map.html" class="box_new_artist-tag"></a>
+                        
                     </div>
                 </div>
             </div>  
@@ -85,35 +104,56 @@
         <div class="container">
             <div class="footer_row">
                 <div class="footer_logo">
-                    <img src="./img/footer/Footer-logo.png" alt="logo">
+                    <a href="main.html"><img src="./img/footer/Footer-logo.png" alt="logo"></a>
                 </div>
                 <div class="footer_navi">
                     <div class="footer_navi_info">
                         <ul>
-                            <li>
-                                <a href="">artists</a>
-                            </li>
-                            <li>
-                                <a href="">map</a>
-                            </li>
-                            <li>
-                                <a href="">about</a>
-                            </li>
+                            <li><a href="artists.html">artists</a></li>
+                            <li><a href="map.html">map</a></li>
+                            <li><a href="about.html">about</a></li>
                         </ul>
                     </div>
                     <div class="footer_navi_submit">
-                        <span>
-                            <a href="#">submit an art</a>
-                        </span>
+                        <span><a href="formAddArt.html">submit an art</a></span>
                     </div>
                 </div>
                 <div class="mobile-menu">
-                    <a href="#"><img src="./img/footer/icomoon-free_menu.png" alt="mobile-menu"></a>
+                    <a href="#" id="open_menu"><img src="./img/footer/icomoon-free_menu.png" alt="mobile-menu"></a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="mobile" id="mobile">
+        <div class="mobile_head">
+            <div class="mobile_logo">
+                <a href="main.html"><img src="./img/mobile/logo.png" alt="logo"></a>
+            </div>
+            <div class="mobile_close">
+                <a href="#" id="close_mobile" class="close_mobile"></a>
+            </div>
+        </div>
+        <div class="mobile_navi">
+            <div class="mobile_navi_info">
+                <ul>
+                    <li><a href="artists.html">artists</a></li>
+                    <li><a href="map.html">map</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </div>
+            <div class="mobile_navi_submit">
+                <span><a href="formAddArt.html">submit an art</a></span>
+            </div>
+        </div>
+    </div>
 
+    <script src="./scriptMain.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            //
+        });
+    </script>
 </body>
 
 </html>

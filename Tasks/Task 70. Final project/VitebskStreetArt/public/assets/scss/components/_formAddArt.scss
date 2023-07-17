@@ -1,24 +1,32 @@
-.formAddArt_container{
-    width: 700px;
-    border-radius: 20px;
-    background-color: $white;
-    position: relative;
+.flexForm{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
 }
 
+.formAddArt_container{
+    width: 400px;
+    border-radius: 20px;
+    background-color: $white;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+        width: 700px;
+    }  
+}
+
 .formAddArt_close {
-    position: absolute;
-    top: 5px;
-    left: 715px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 15px 18px;
 
     >.close {
         width: 48px;
         height: 48px;
         background-image: url(../img/main/tags/close-btn-green.png);
         border: none;
+        background-color: $white;
 
         &:hover {
             cursor: pointer;
@@ -31,7 +39,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 48px 0px;
+    margin: 5px 0px 48px;
 
     >h1{
         width: 125px;
@@ -44,12 +52,24 @@
 
 .formAddArt_form{
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 84%;
 }
 
 .form-row{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 32px;
 }
+
 
 input, textarea{
     width: 100%;
@@ -94,9 +114,11 @@ label{
 .form-row_button{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .button_send{
+    width: 55px;
     font-size: 20px;
     font-weight: 400;
     color: $black;
@@ -108,4 +130,15 @@ label{
     &:hover{
         border-bottom: 4px solid $turquoise;
     }
+}
+
+.error {
+    border:2px solid red !important;
+}
+
+.error-text {
+    width: 100%;
+    color: red;
+    padding: 5px 15px;
+    font-size: 12px;
 }
