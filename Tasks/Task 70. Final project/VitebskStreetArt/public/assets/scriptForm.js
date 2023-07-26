@@ -24,11 +24,10 @@ form.addEventListener("submit", function(event){
             span.classList.add("error-text");
             span.innerText = "This is a required field";
             let field = this.querySelector(`[name="${name}"]`);
-            field.classList.add("error");
+            //field.classList.add("error");
             field.insertAdjacentElement("afterend", span);
             hasError = true;
-        }
-        
+        }   
     });
 
     if(!hasError){

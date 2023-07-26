@@ -523,23 +523,24 @@ input[type=file] {
   display: none;
 }
 
-label {
+.custom-file {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  box-sizing: border-box;
+  width: 100%;
   height: 168px;
   background-color: #FFFFFF;
   border: 1px dashed #E6E6E6;
   border-radius: 5px;
   cursor: pointer;
 }
-label > span {
+.custom-file > span {
   font-size: 20px;
   font-weight: 400;
   color: #9A9B9D;
 }
-label:hover {
+.custom-file:hover {
   background-color: #F2F2F2;
 }
 
